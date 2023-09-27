@@ -1,0 +1,406 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.144, 28.7965]
+      },
+      "properties": {
+        "name": "Alipur",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.3105, 28.6586]
+      },
+      "properties": {
+        "name": "Anand Vihar",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.165532, 28.701819]
+      },
+      "properties": {
+        "name": "Ashok Vihar",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.13035582080687, 28.47691412365905]
+      },
+      "properties": {
+        "name": "Aya Nagar",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0352, 28.7995]
+      },
+      "properties": {
+        "name": "Bawana",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.196368, 28.728714]
+      },
+      "properties": {
+        "name": "Burari Crossing",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.273998, 28.551088]
+      },
+      "properties": {
+        "name": "CRRI Mathura Road",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.230169, 28.657839]
+      },
+      "properties": {
+        "name": "Chandni Chowk",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1168828658, 28.7432986935]
+      },
+      "properties": {
+        "name": "DTU",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.266835, 28.4997587]
+      },
+      "properties": {
+        "name": "Dr. Karni Singh Shooting Range",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0671, 28.5658]
+      },
+      "properties": {
+        "name": "Dwarka-Sector 8",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.291417, 28.655933]
+      },
+      "properties": {
+        "name": "East Arjun Nagar",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.10900225, 28.56293525]
+      },
+      "properties": {
+        "name": "IGI Airport (T3)",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.311883, 28.67615]
+      },
+      "properties": {
+        "name": "IBHAS Dilshad Garden",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.244433, 28.627967]
+      },
+      "properties": {
+        "name": "ITO",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1648, 28.7286]
+      },
+      "properties": {
+        "name": "Jahangirpuri",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2334405, 28.5901157]
+      },
+      "properties": {
+        "name": "Jawaharlal  Nehru Stadium",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2237, 28.592]
+      },
+      "properties": {
+        "name": "Lodhi Road",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.239986, 28.611043]
+      },
+      "properties": {
+        "name": "Major Dhyan Chand National Stadium",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2168625, 28.52484]
+      },
+      "properties": {
+        "name": "Mandir Marg",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.02614, 28.68662]
+      },
+      "properties": {
+        "name": "Mundka",
+        "marker-image": "./directions_bus.svg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.034871, 28.608333]
+      },
+      "properties": {
+        "name": "NSIT Dwarka"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [76.977508, 28.615127]
+      },
+      "properties": {
+        "name": "Najafgarh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.088107, 28.851958]
+      },
+      "properties": {
+        "name": "Narela"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.253917, 28.568283]
+      },
+      "properties": {
+        "name": "Nehru Nagar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.214833, 28.688417]
+      },
+      "properties": {
+        "name": "North Campus DU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.27912485599519, 28.507134530628505]
+      },
+      "properties": {
+        "name": "Okhla Phase-2"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.277125265, 28.59889509]
+      },
+      "properties": {
+        "name": "Patparganj"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.13716, 28.669047]
+      },
+      "properties": {
+        "name": "Punjabi Bagh"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.192833, 28.644583]
+      },
+      "properties": {
+        "name": "Pusa IMD"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.166983, 28.630033]
+      },
+      "properties": {
+        "name": "Pusa DPCC"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.178246, 28.564697]
+      },
+      "properties": {
+        "name": "R K Puram"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1555, 28.653117]
+      },
+      "properties": {
+        "name": "Shadipur"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.22833998363114, 28.55322825493434]
+      },
+      "properties": {
+        "name": "Sirifort"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.246233, 28.7324]
+      },
+      "properties": {
+        "name": "Sonia Vihar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.201967, 28.54585]
+      },
+      "properties": {
+        "name": "Sri Aurobindo Marg"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.307017, 28.666583]
+      },
+      "properties": {
+        "name": "Vivek Vihar"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.150918, 28.693861]
+      },
+      "properties": {
+        "name": "Wazirpur"
+      }
+    }
+  ]
+}
