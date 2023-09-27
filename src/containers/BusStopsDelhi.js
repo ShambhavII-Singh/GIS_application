@@ -3,9 +3,10 @@ import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
 import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 
 const BusStopsDelhi = () => {
+    const mapRef = useRef();
     useEffect(() => {
 
         //API key
@@ -50,11 +51,11 @@ const BusStopsDelhi = () => {
             map: map, //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
             zoom: 11, //default zoom level
-            container: "view" //where to place the map
+            container: mapRef.current //where to place the map
         });
     }, []);
 
-    return <div id="view" style={{width:"100%", height:"100vh"}}></div>
+    return <div id="MapView" ref={mapRef} style={{width:"100%", height:"100vh"}}></div>
 }
 
 export default BusStopsDelhi;
