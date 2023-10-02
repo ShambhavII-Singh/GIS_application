@@ -9,7 +9,8 @@
       },
       "properties": {
         "name": "Alipur",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 92.32237991,
+        "PM2.5Max": 531
       }
     },
     {
@@ -20,7 +21,8 @@
       },
       "properties": {
         "name": "Anand Vihar",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 121.8771472,
+        "PM2.5Max": 960
       }
     },
     {
@@ -31,7 +33,8 @@
       },
       "properties": {
         "name": "Ashok Vihar",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 94.73513738,
+        "PM2.5Max": 727
       }
     },
     {
@@ -42,7 +45,8 @@
       },
       "properties": {
         "name": "Aya Nagar",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 64.34974453,
+        "PM2.5Max": 936.17
       }
     },
     {
@@ -53,7 +57,8 @@
       },
       "properties": {
         "name": "Bawana",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 108.0003172,
+        "PM2.5Max": 743
       }
     },
     {
@@ -64,7 +69,8 @@
       },
       "properties": {
         "name": "Burari Crossing",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 97.68754058,
+        "PM2.5Max": 530.56
       }
     },
     {
@@ -75,7 +81,8 @@
       },
       "properties": {
         "name": "CRRI Mathura Road",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 82.17012259,
+        "PM2.5Max": 719.09
       }
     },
     {
@@ -86,7 +93,8 @@
       },
       "properties": {
         "name": "Chandni Chowk",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 88.14785308,
+        "PM2.5Max": 770.7
       }
     },
     {
@@ -97,7 +105,8 @@
       },
       "properties": {
         "name": "DTU",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 111.9448432,
+        "PM2.5Max": 657.2
       }
     },
     {
@@ -108,7 +117,8 @@
       },
       "properties": {
         "name": "Dr. Karni Singh Shooting Range",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 82.88253012,
+        "PM2.5Max": 516
       }
     },
     {
@@ -119,7 +129,8 @@
       },
       "properties": {
         "name": "Dwarka-Sector 8",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 90.25198381,
+        "PM2.5Max": 542
       }
     },
     {
@@ -130,7 +141,8 @@
       },
       "properties": {
         "name": "East Arjun Nagar",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 103.316729,
+        "PM2.5Max": 646
       }
     },
     {
@@ -141,7 +153,8 @@
       },
       "properties": {
         "name": "IGI Airport (T3)",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 79.16524054,
+        "PM2.5Max": 779.48
       }
     },
     {
@@ -152,7 +165,8 @@
       },
       "properties": {
         "name": "IBHAS Dilshad Garden",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 84.92389458,
+        "PM2.5Max": 498.5
       }
     },
     {
@@ -163,7 +177,8 @@
       },
       "properties": {
         "name": "ITO",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 95.34971792,
+        "PM2.5Max": 646
       }
     },
     {
@@ -174,7 +189,8 @@
       },
       "properties": {
         "name": "Jahangirpuri",
-        "marker-image": "./directions_bus.svg"
+        "PM2.5Avg": 122.2657589,
+        "PM2.5Max": 769
       }
     },
     {
@@ -184,8 +200,9 @@
         "coordinates": [77.2334405, 28.5901157]
       },
       "properties": {
-        "name": "Jawaharlal  Nehru Stadium",
-        "marker-image": "./directions_bus.svg"
+        "name": "Jawaharlal Nehru Stadium",
+        "PM2.5Avg": 83.68018964,
+        "PM2.5Max": 493
       }
     },
     {
@@ -195,8 +212,7 @@
         "coordinates": [77.2237, 28.592]
       },
       "properties": {
-        "name": "Lodhi Road",
-        "marker-image": "./directions_bus.svg"
+        "name": "Lodhi Road"
       }
     },
     {
@@ -206,8 +222,7 @@
         "coordinates": [77.239986, 28.611043]
       },
       "properties": {
-        "name": "Major Dhyan Chand National Stadium",
-        "marker-image": "./directions_bus.svg"
+        "name": "Major Dhyan Chand National Stadium"
       }
     },
     {
@@ -217,8 +232,7 @@
         "coordinates": [77.2168625, 28.52484]
       },
       "properties": {
-        "name": "Mandir Marg",
-        "marker-image": "./directions_bus.svg"
+        "name": "Mandir Marg"
       }
     },
     {
@@ -228,8 +242,7 @@
         "coordinates": [77.02614, 28.68662]
       },
       "properties": {
-        "name": "Mundka",
-        "marker-image": "./directions_bus.svg"
+        "name": "Mundka"
       }
     },
     {
