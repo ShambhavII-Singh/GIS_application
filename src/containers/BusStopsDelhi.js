@@ -50,7 +50,7 @@ const BusStopsDelhi = () => {
         const view = new MapView({
             map: map, //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
-            zoom: 10.5, //default zoom level
+            zoom: 11, //default zoom level
             container: mapRef.current //where to place the map
         });
     }, []);
