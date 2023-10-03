@@ -1,6 +1,7 @@
 import esriConfig from '@arcgis/core/config';
 import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
+import Fullscreen from '@arcgis/core/widgets/Fullscreen';
 import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 import { useEffect, useRef } from 'react';
@@ -34,7 +35,7 @@ const BusStopsDelhi = () => {
 
         //contains data for the layer to render all bus stops
         const geojsonLayer = new GeoJSONLayer({
-            url: "./busStops.json", //data
+            url: "./busStopsGeo.json", //data
             popupTemplate: template, //tooltip
             renderer: renderer, //marker
         });
@@ -46,16 +47,22 @@ const BusStopsDelhi = () => {
         });
 
         //customize how the map should look
-        // eslint-disable-next-line no-unused-vars
         const view = new MapView({
             map: map, //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
             zoom: 11, //default zoom level
             container: mapRef.current //where to place the map
         });
+
+        //adding a fullscreen button
+        const fullscreen = new Fullscreen({
+            view: view //where to place the widget
+        });
+        view.ui.add(fullscreen, "top-right");
+        
     }, []);
 
-    return <div id="MapView" ref={mapRef} style={{width:"100%", height:"100vh"}}></div>
+    return <div id="MapView" ref={mapRef} style={{width:"100%", height:"80vh"}}></div>
 }
 
 export default BusStopsDelhi;
