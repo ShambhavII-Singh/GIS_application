@@ -1,0 +1,159 @@
+[
+    {
+        "name": "Alipur",
+        "PM2.5Avg": 92.32237991
+    },
+    {
+        "name": "Anand Vihar",
+        "PM2.5Avg": 121.8771472
+    },
+    {
+        "name": "Ashok Vihar",
+        "PM2.5Avg": 94.73513738
+    },
+    {
+        "name": "Aya Nagar",
+        "PM2.5Avg": 64.34974453
+    },
+    {
+        "name": "Bawana",
+        "PM2.5Avg": 108.0003172
+    },
+    {
+        "name": "Burari Crossing",
+        "PM2.5Avg": 97.68754058
+    },
+    {
+        "name": "CRRI Mathura Road",
+        "PM2.5Avg": 82.17012259
+    },
+    {
+        "name": "Chandni Chowk",
+        "PM2.5Avg": 88.14785308
+    },
+    {
+        "name": "DTU",
+        "PM2.5Avg": 111.9448432
+    },
+    {
+        "name": "Dr. Karni Singh Shooting Range",
+        "PM2.5Avg": 82.88253012
+    },
+    {
+        "name": "Dwarka-Sector 8",
+        "PM2.5Avg": 90.25198381
+    },
+    {
+        "name": "East Arjun Nagar",
+        "PM2.5Avg": 103.316729
+    },
+    {
+        "name": "IGI Airport (T3)",
+        "PM2.5Avg": 79.16524054
+    },
+    {
+        "name": "IBHAS Dilshad Garden",
+        "PM2.5Avg": 84.92389458
+    },
+    {
+        "name": "ITO",
+        "PM2.5Avg": 95.34971792
+    },
+    {
+        "name": "Jahangirpuri",
+        "PM2.5Avg": 122.2657589
+    },
+    {
+        "name": "Jawaharlal Nehru Stadium",
+        "PM2.5Avg": 83.68018964
+    },
+    {
+        "name": "Lodhi Road",
+        "PM2.5Avg": 98.46385233
+    },
+    {
+        "name": "Major Dhyan Chand National Stadium",
+        "PM2.5Avg": 92.54140988
+    },
+    {
+        "name": "Mandir Marg",
+        "PM2.5Avg": 88.32654328
+    },
+    {
+        "name": "Mundka",
+        "PM2.5Avg": 109.1788468
+    },
+    {
+        "name": "NSIT Dwarka",
+        "PM2.5Avg": 111.4052739
+    },
+    {
+        "name": "Najafgarh",
+        "PM2.5Avg": 70.81028071
+    },
+    {
+        "name": "Narela",
+        "PM2.5Avg": 104.2917141
+    },
+    {
+        "name": "Nehru Nagar",
+        "PM2.5Avg": 106.1176002
+    },
+    {
+        "name": "North Campus DU",
+        "PM2.5Avg": 82.88585662
+    },
+    {
+        "name": "Okhla Phase-2",
+        "PM2.5Avg": 85.69526612
+    },
+    {
+        "name": "Patparganj",
+        "PM2.5Avg": 100.0237263
+    },
+    {
+        "name": "Punjabi Bagh",
+        "PM2.5Avg": 115.0047892
+    },
+    {
+        "name": "Pusa IMD",
+        "PM2.5Avg": 82.58731931
+    },
+    {
+        "name": "Pusa DPCC",
+        "PM2.5Avg": 75.65458689
+    },
+    {
+        "name": "R K Puram",
+        "PM2.5Avg": 97.85211907
+    },
+    {
+        "name": "Rohini",
+        "PM2.5Avg": 104.0814359
+    },
+    {
+        "name": "Shadipur",
+        "PM2.5Avg": 81.58906867
+    },
+    {
+        "name": "Sirifort",
+        "PM2.5Avg": 88.41696601
+    },
+    {
+        "name": "Sonia Vihar",
+        "PM2.5Avg": 89.50481928
+    },
+    {
+        "name": "Sri Aurobindo Marg",
+        "PM2.5Avg": 75.64695494
+    },
+    {
+        "name": "Vivek Vihar",
+        "PM2.5Avg": 99.6909027
+    },
+    {
+        "name": "Wazirpur",
+        "PM2.5Avg": 107.9948983
+    }
+]
+    
