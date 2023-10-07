@@ -9,7 +9,7 @@
       },
       "properties": {
         "name": "Alipur",
-        "PM2.5Avg": 92.32237991,
+        "PMAvg": 92.32237991,
         "PM2.5Max": 531
       }
     },
@@ -21,7 +21,7 @@
       },
       "properties": {
         "name": "Anand Vihar",
-        "PM2.5Avg": 121.8771472,
+        "PMAvg": 121.8771472,
         "PM2.5Max": 960
       }
     },
@@ -33,7 +33,7 @@
       },
       "properties": {
         "name": "Ashok Vihar",
-        "PM2.5Avg": 94.73513738,
+        "PMAvg": 94.73513738,
         "PM2.5Max": 727
       }
     },
@@ -45,7 +45,7 @@
       },
       "properties": {
         "name": "Aya Nagar",
-        "PM2.5Avg": 64.34974453,
+        "PMAvg": 64.34974453,
         "PM2.5Max": 936.17
       }
     },
@@ -57,7 +57,7 @@
       },
       "properties": {
         "name": "Bawana",
-        "PM2.5Avg": 108.0003172,
+        "PMAvg": 108.0003172,
         "PM2.5Max": 743
       }
     },
@@ -69,7 +69,7 @@
       },
       "properties": {
         "name": "Burari Crossing",
-        "PM2.5Avg": 97.68754058,
+        "PMAvg": 97.68754058,
         "PM2.5Max": 530.56
       }
     },
@@ -81,7 +81,7 @@
       },
       "properties": {
         "name": "CRRI Mathura Road",
-        "PM2.5Avg": 82.17012259,
+        "PMAvg": 82.17012259,
         "PM2.5Max": 719.09
       }
     },
@@ -93,7 +93,7 @@
       },
       "properties": {
         "name": "Chandni Chowk",
-        "PM2.5Avg": 88.14785308,
+        "PMAvg": 88.14785308,
         "PM2.5Max": 770.7
       }
     },
@@ -105,7 +105,7 @@
       },
       "properties": {
         "name": "DTU",
-        "PM2.5Avg": 111.9448432,
+        "PMAvg": 111.9448432,
         "PM2.5Max": 657.2
       }
     },
@@ -117,7 +117,7 @@
       },
       "properties": {
         "name": "Dr. Karni Singh Shooting Range",
-        "PM2.5Avg": 82.88253012,
+        "PMAvg": 82.88253012,
         "PM2.5Max": 516
       }
     },
@@ -129,7 +129,7 @@
       },
       "properties": {
         "name": "Dwarka-Sector 8",
-        "PM2.5Avg": 90.25198381,
+        "PMAvg": 90.25198381,
         "PM2.5Max": 542
       }
     },
@@ -141,7 +141,7 @@
       },
       "properties": {
         "name": "East Arjun Nagar",
-        "PM2.5Avg": 103.316729,
+        "PMAvg": 103.316729,
         "PM2.5Max": 646
       }
     },
@@ -153,7 +153,7 @@
       },
       "properties": {
         "name": "IGI Airport (T3)",
-        "PM2.5Avg": 79.16524054,
+        "PMAvg": 79.16524054,
         "PM2.5Max": 779.48
       }
     },
@@ -165,7 +165,7 @@
       },
       "properties": {
         "name": "IBHAS Dilshad Garden",
-        "PM2.5Avg": 84.92389458,
+        "PMAvg": 84.92389458,
         "PM2.5Max": 498.5
       }
     },
@@ -177,7 +177,7 @@
       },
       "properties": {
         "name": "ITO",
-        "PM2.5Avg": 95.34971792,
+        "PMAvg": 95.34971792,
         "PM2.5Max": 646
       }
     },
@@ -189,7 +189,7 @@
       },
       "properties": {
         "name": "Jahangirpuri",
-        "PM2.5Avg": 122.2657589,
+        "PMAvg": 122.2657589,
         "PM2.5Max": 769
       }
     },
@@ -201,7 +201,7 @@
       },
       "properties": {
         "name": "Jawaharlal Nehru Stadium",
-        "PM2.5Avg": 83.68018964,
+        "PMAvg": 83.68018964,
         "PM2.5Max": 493
       }
     },
@@ -213,7 +213,7 @@
       },
       "properties": {
         "name": "Lodhi Road",
-        "PM2.5Avg": 98.46385233,
+        "PMAvg": 98.46385233,
         "PM2.5Max": 998.6
       }
     },
@@ -225,7 +225,7 @@
       },
       "properties": {
         "name": "Major Dhyan Chand National Stadium",
-        "PM2.5Avg": 92.54140988,
+        "PMAvg": 92.54140988,
         "PM2.5Max": 467
       }
     },
@@ -237,7 +237,7 @@
       },
       "properties": {
         "name": "Mandir Marg",
-        "PM2.5Avg": 88.32654328,
+        "PMAvg": 88.32654328,
         "PM2.5Max": 413
       }
     },
@@ -249,7 +249,7 @@
       },
       "properties": {
         "name": "Mundka",
-        "PM2.5Avg": 109.1788468,
+        "PMAvg": 109.1788468,
         "PM2.5Max": 763
       }
     },
@@ -261,7 +261,7 @@
       },
       "properties": {
         "name": "NSIT Dwarka",
-        "PM2.5Avg": 111.4052739,
+        "PMAvg": 111.4052739,
         "PM2.5Max": 508.8
       }
     },
@@ -273,7 +273,7 @@
       },
       "properties": {
         "name": "Najafgarh",
-        "PM2.5Avg": 70.81028071,
+        "PMAvg": 70.81028071,
         "PM2.5Max": 367
       }
     },
@@ -285,7 +285,7 @@
       },
       "properties": {
         "name": "Narela",
-        "PM2.5Avg": 104.2917141,
+        "PMAvg": 104.2917141,
         "PM2.5Max": 517
       }
     },
@@ -297,7 +297,7 @@
       },
       "properties": {
         "name": "Nehru Nagar",
-        "PM2.5Avg": 106.1176002,
+        "PMAvg": 106.1176002,
         "PM2.5Max": 968
       }
     },
@@ -309,7 +309,7 @@
       },
       "properties": {
         "name": "North Campus DU",
-        "PM2.5Avg": 82.88585662,
+        "PMAvg": 82.88585662,
         "PM2.5Max": 800.2
       }
     },
@@ -321,7 +321,7 @@
       },
       "properties": {
         "name": "Okhla Phase-2",
-        "PM2.5Avg": 85.69526612,
+        "PMAvg": 85.69526612,
         "PM2.5Max": 525
       }
     },
@@ -333,7 +333,7 @@
       },
       "properties": {
         "name": "Patparganj",
-        "PM2.5Avg": 100.0237263,
+        "PMAvg": 100.0237263,
         "PM2.5Max": 490
       }
     },
@@ -345,7 +345,7 @@
       },
       "properties": {
         "name": "Punjabi Bagh",
-        "PM2.5Avg": 115.0047892,
+        "PMAvg": 115.0047892,
         "PM2.5Max": 796
       }
     },
@@ -357,7 +357,7 @@
       },
       "properties": {
         "name": "Pusa IMD",
-        "PM2.5Avg": 82.58731931,
+        "PMAvg": 82.58731931,
         "PM2.5Max": 576
       }
     },
@@ -369,7 +369,7 @@
       },
       "properties": {
         "name": "Pusa DPCC",
-        "PM2.5Avg": 75.65458689,
+        "PMAvg": 75.65458689,
         "PM2.5Max": 846.34
       }
     },
@@ -381,7 +381,7 @@
       },
       "properties": {
         "name": "R K Puram",
-        "PM2.5Avg": 97.85211907,
+        "PMAvg": 97.85211907,
         "PM2.5Max": 763
       }
     },
@@ -393,7 +393,7 @@
       },
       "properties": {
         "name": "Rohini",
-        "PM2.5Avg": 104.0814359,
+        "PMAvg": 104.0814359,
         "PM2.5Max": 554
       }
     },
@@ -405,7 +405,7 @@
       },
       "properties": {
         "name": "Shadipur",
-        "PM2.5Avg": 81.58906867,
+        "PMAvg": 81.58906867,
         "PM2.5Max": 357.8
       }
     },
@@ -417,7 +417,7 @@
       },
       "properties": {
         "name": "Sirifort",
-        "PM2.5Avg": 88.41696601,
+        "PMAvg": 88.41696601,
         "PM2.5Max": 850
       }
     },
@@ -429,7 +429,7 @@
       },
       "properties": {
         "name": "Sonia Vihar",
-        "PM2.5Avg": 89.50481928,
+        "PMAvg": 89.50481928,
         "PM2.5Max": 500
       }
     },
@@ -441,7 +441,7 @@
       },
       "properties": {
         "name": "Sri Aurobindo Marg",
-        "PM2.5Avg": 75.64695494,
+        "PMAvg": 75.64695494,
         "PM2.5Max": 370
       }
     },
@@ -453,7 +453,7 @@
       },
       "properties": {
         "name": "Vivek Vihar",
-        "PM2.5Avg": 99.6909027,
+        "PMAvg": 99.6909027,
         "PM2.5Max": 679
       }
     },
@@ -465,7 +465,7 @@
       },
       "properties": {
         "name": "Wazirpur",
-        "PM2.5Avg": 107.9948983,
+        "PMAvg": 107.9948983,
         "PM2.5Max": 611
       }
     }
