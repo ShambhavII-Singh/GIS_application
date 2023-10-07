@@ -7,7 +7,7 @@ import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 import { useEffect, useRef } from 'react';
 
 const BusStopsDelhi = () => {
-    const mapRef = useRef();
+    const appRef = useRef();
     useEffect(() => {
 
         //API key
@@ -51,18 +51,25 @@ const BusStopsDelhi = () => {
             map: map, //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
             zoom: 11, //default zoom level
-            container: mapRef.current //where to place the map
+            container: appRef.current //where to place the map
         });
 
         //adding a fullscreen button
         const fullscreen = new Fullscreen({
-            view: view //where to place the widget
+            view: view, //where to place the widget
+            element: appRef.current //what to expand
         });
-        view.ui.add(fullscreen, "top-right");
+        view.ui.add(fullscreen, "top-left");
         
     }, []);
 
-    return <div id="MapView" ref={mapRef} style={{width:"100%", height:"80vh"}}></div>
+    return (
+        <div style={{width:"90%"}}>
+            <div ref={appRef}>
+                <div style={{height:"90vh"}}></div>
+            </div>
+        </div>
+    )
 }
 
 export default BusStopsDelhi;
