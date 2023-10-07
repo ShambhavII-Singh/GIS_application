@@ -22,8 +22,8 @@ const BusStopsDelhi = () => {
 
         //renders an on-click tooltip
         const template = {
-            title: "{name} Bus Stop",
-            content: "PM2.5 rating: {PM} (Average) & {PM2.5Max} (Maximum)",
+            title: "{name}",
+            content: "PM2.5 rating: {PMAvg} (Average) & {PMMax} (Maximum)",
         };
 
         //renders a bus stop icon for each bus stop
