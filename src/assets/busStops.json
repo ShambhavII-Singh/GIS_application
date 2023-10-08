@@ -1,178 +1,8 @@
 [
     {
-        "name": "Alipur",
-        "PMAvg": 92.32237991,
-        "quadrant": 2.09
-    },
-    {
-        "name": "Anand Vihar",
-        "PMAvg": 121.8771472,
-        "quadrant": 1.04
-    },
-    {
-        "name": "Ashok Vihar",
-        "PMAvg": 94.73513738,
-        "quadrant": 2.01
-    },
-    {
-        "name": "Aya Nagar",
-        "PMAvg": 64.34974453,
-        "quadrant": 3.05
-    },
-    {
-        "name": "Bawana",
-        "PMAvg": 108.0003172,
-        "quadrant": 2.13
-    },
-    {
-        "name": "Burari Crossing",
-        "PMAvg": 97.68754058,
-        "quadrant": 2.08
-    },
-    {
-        "name": "CRRI Mathura Road",
-        "PMAvg": 82.17012259,
-        "quadrant": 4.03
-    },
-    {
         "name": "Chandni Chowk",
         "PMAvg": 88.14785308,
-        "quadrant": 1.00
-    },
-    {
-        "name": "DTU",
-        "PMAvg": 111.9448432,
-        "quadrant": 2.04
-    },
-    {
-        "name": "Dr. Karni Singh Shooting Range",
-        "PMAvg": 82.88253012,
-        "quadrant": 4.09
-    },
-    {
-        "name": "Dwarka-Sector 8",
-        "PMAvg": 90.25198381,
-        "quadrant": 3.04
-    },
-    {
-        "name": "East Arjun Nagar",
-        "PMAvg": 103.316729,
-        "quadrant": 1.03
-    },
-    {
-        "name": "IGI Airport (T3)",
-        "PMAvg": 79.16524054,
-        "quadrant": 3.01
-    },
-    {
-        "name": "IBHAS Dilshad Garden",
-        "PMAvg": 84.92389458,
-        "quadrant": 1.02
-    },
-    {
-        "name": "ITO",
-        "PMAvg": 95.34971792,
-        "quadrant": 4.07
-    },
-    {
-        "name": "Jahangirpuri",
-        "PMAvg": 122.2657589,
-        "quadrant": 2.12
-    },
-    {
-        "name": "Jawaharlal Nehru Stadium",
-        "PMAvg": 83.68018964,
-        "quadrant": 4.06
-    },
-    {
-        "name": "Lodhi Road",
-        "PMAvg": 98.46385233,
-        "quadrant": 4.08
-    },
-    {
-        "name": "Major Dhyan Chand National Stadium",
-        "PMAvg": 92.54140988,
-        "quadrant": 4.01
-    },
-    {
-        "name": "Mandir Marg",
-        "PMAvg": 88.32654328,
-        "quadrant": 3.02
-    },
-    {
-        "name": "Mundka",
-        "PMAvg": 109.1788468,
-        "quadrant": 2.11
-    },
-    {
-        "name": "NSIT Dwarka",
-        "PMAvg": 111.4052739,
-        "quadrant": 3.07
-    },
-    {
-        "name": "Najafgarh",
-        "PMAvg": 70.81028071,
-        "quadrant": 3.00
-    },
-    {
-        "name": "Narela",
-        "PMAvg": 104.2917141,
-        "quadrant": 2.10
-    },
-    {
-        "name": "Nehru Nagar",
-        "PMAvg": 106.1176002,
-        "quadrant": 4.02
-    },
-    {
-        "name": "North Campus DU",
-        "PMAvg": 82.88585662,
-        "quadrant": 2.00
-    },
-    {
-        "name": "Okhla Phase-2",
-        "PMAvg": 85.69526612,
-        "quadrant": 4.05
-    },
-    {
-        "name": "Patparganj",
-        "PMAvg": 100.0237263,
-        "quadrant": 4.04
-    },
-    {
-        "name": "Punjabi Bagh",
-        "PMAvg": 115.0047892,
-        "quadrant": 2.07
-    },
-    {
-        "name": "Pusa IMD",
-        "PMAvg": 82.58731931,
-        "quadrant": 2.02
-    },
-    {
-        "name": "Pusa DPCC",
-        "PMAvg": 75.65458689,
-        "quadrant": 3.06
-    },
-    {
-        "name": "R K Puram",
-        "PMAvg": 97.85211907,
-        "quadrant": 3.08
-    },
-    {
-        "name": "Rohini",
-        "PMAvg": 104.0814359,
-        "quadrant": 2.06
-    },
-    {
-        "name": "Shadipur",
-        "PMAvg": 81.58906867,
-        "quadrant": 2.03
-    },
-    {
-        "name": "Sirifort",
-        "PMAvg": 88.41696601,
-        "quadrant": 4.00
+        "quadrant": 1
     },
     {
         "name": "Sonia Vihar",
@@ -180,9 +10,19 @@
         "quadrant": 1.01
     },
     {
-        "name": "Sri Aurobindo Marg",
-        "PMAvg": 75.64695494,
-        "quadrant": 3.03
+        "name": "IBHAS Dilshad Garden",
+        "PMAvg": 84.92389458,
+        "quadrant": 1.02
+    },
+    {
+        "name": "East Arjun Nagar",
+        "PMAvg": 103.316729,
+        "quadrant": 1.03
+    },
+    {
+        "name": "Anand Vihar",
+        "PMAvg": 121.8771472,
+        "quadrant": 1.04
     },
     {
         "name": "Vivek Vihar",
@@ -190,8 +30,168 @@
         "quadrant": 1.05
     },
     {
+        "name": "North Campus DU",
+        "PMAvg": 82.88585662,
+        "quadrant": 2
+    },
+    {
+        "name": "Ashok Vihar",
+        "PMAvg": 94.73513738,
+        "quadrant": 2.01
+    },
+    {
+        "name": "Pusa IMD",
+        "PMAvg": 82.58731931,
+        "quadrant": 2.02
+    },
+    {
+        "name": "Shadipur",
+        "PMAvg": 81.58906867,
+        "quadrant": 2.03
+    },
+    {
+        "name": "DTU",
+        "PMAvg": 111.9448432,
+        "quadrant": 2.04
+    },
+    {
         "name": "Wazirpur",
         "PMAvg": 107.9948983,
         "quadrant": 2.05
+    },
+    {
+        "name": "Rohini",
+        "PMAvg": 104.0814359,
+        "quadrant": 2.06
+    },
+    {
+        "name": "Punjabi Bagh",
+        "PMAvg": 115.0047892,
+        "quadrant": 2.07
+    },
+    {
+        "name": "Burari Crossing",
+        "PMAvg": 97.68754058,
+        "quadrant": 2.08
+    },
+    {
+        "name": "Alipur",
+        "PMAvg": 92.32237991,
+        "quadrant": 2.09
+    },
+    {
+        "name": "Narela",
+        "PMAvg": 104.2917141,
+        "quadrant": 2.10
+    },
+    {
+        "name": "Mundka",
+        "PMAvg": 109.1788468,
+        "quadrant": 2.11
+    },
+    {
+        "name": "Jahangirpuri",
+        "PMAvg": 122.2657589,
+        "quadrant": 2.12
+    },
+    {
+        "name": "Bawana",
+        "PMAvg": 108.0003172,
+        "quadrant": 2.13
+    },
+    {
+        "name": "Najafgarh",
+        "PMAvg": 70.81028071,
+        "quadrant": 3
+    },
+    {
+        "name": "IGI Airport (T3)",
+        "PMAvg": 79.16524054,
+        "quadrant": 3.01
+    },
+    {
+        "name": "Mandir Marg",
+        "PMAvg": 88.32654328,
+        "quadrant": 3.02
+    },
+    {
+        "name": "Sri Aurobindo Marg",
+        "PMAvg": 75.64695494,
+        "quadrant": 3.03
+    },
+    {
+        "name": "Dwarka-Sector 8",
+        "PMAvg": 90.25198381,
+        "quadrant": 3.04
+    },
+    {
+        "name": "Aya Nagar",
+        "PMAvg": 64.34974453,
+        "quadrant": 3.05
+    },
+    {
+        "name": "Pusa DPCC",
+        "PMAvg": 75.65458689,
+        "quadrant": 3.06
+    },
+    {
+        "name": "NSIT Dwarka",
+        "PMAvg": 111.4052739,
+        "quadrant": 3.07
+    },
+    {
+        "name": "R K Puram",
+        "PMAvg": 97.85211907,
+        "quadrant": 3.08
+    },
+    {
+        "name": "Sirifort",
+        "PMAvg": 88.41696601,
+        "quadrant": 4
+    },
+    {
+        "name": "Major Dhyan Chand National Stadium",
+        "PMAvg": 92.54140988,
+        "quadrant": 4.01
+    },
+    {
+        "name": "Nehru Nagar",
+        "PMAvg": 106.1176002,
+        "quadrant": 4.02
+    },
+    {
+        "name": "CRRI Mathura Road",
+        "PMAvg": 82.17012259,
+        "quadrant": 4.03
+    },
+    {
+        "name": "Patparganj",
+        "PMAvg": 100.0237263,
+        "quadrant": 4.04
+    },
+    {
+        "name": "Okhla Phase-2",
+        "PMAvg": 85.69526612,
+        "quadrant": 4.05
+    },
+    {
+        "name": "Jawaharlal Nehru Stadium",
+        "PMAvg": 83.68018964,
+        "quadrant": 4.06
+    },
+    {
+        "name": "ITO",
+        "PMAvg": 95.34971792,
+        "quadrant": 4.07
+    },
+    {
+        "name": "Lodhi Road",
+        "PMAvg": 98.46385233,
+        "quadrant": 4.08
+    },
+    {
+        "name": "Dr. Karni Singh Shooting Range",
+        "PMAvg": 82.88253012,
+        "quadrant": 4.09
     }
 ]
