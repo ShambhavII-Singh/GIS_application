@@ -3,6 +3,10 @@ import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
 import Fullscreen from '@arcgis/core/widgets/Fullscreen';
 import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
+import Popup from "@arcgis/core/widgets/Popup";
+import PopupTemplate from "@arcgis/core/PopupTemplate";
+import CustomContent from "@arcgis/core/popup/content/CustomContent";
+import Search from "@arcgis/core/widgets/Search";
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 import { useEffect, useRef } from 'react';
 
@@ -51,7 +55,18 @@ const BusStopsDelhi = () => {
             map: map, //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
             zoom: 11, //default zoom level
-            container: appRef.current //where to place the map
+            container: appRef.current, //where to place the map
+            popup: {
+                defaultPopupTemplateEnabled: false,
+                dockEnabled: true,
+                dockOptions: {
+                    buttonEnabled: false,
+                    breakpoint: false
+                },
+                visibleElements: {
+                    closeButton: false,
+                }
+            }
         });
 
         //adding a fullscreen button
@@ -59,7 +74,56 @@ const BusStopsDelhi = () => {
             view: view, //where to place the widget
             element: appRef.current //what to expand
         });
+        //fullscreen button appears on the top left side
         view.ui.add(fullscreen, "top-left");
+        
+        view.when(() => {
+            const centerPoint = view.center.clone();
+
+            let searchWidget = new Search({
+                view: view,
+                includeDefaultSources: false,
+                locationEnabled: false,
+                popupEnabled: true,
+                searchAllEnabled: false,
+                suggestionsEnabled: true,
+                sources: [{
+                    layer: geojsonLayer,
+                    searchFields: ["name"],
+                    displayField: "name",
+                    exactMatch: false,
+                    outFields: ["*"],
+                    name: "Stand name",
+                    placeholder: "Search by name...",
+                }]
+            });
+
+            view.openPopup({
+                title: "Bus Stands of New Delhi",
+                location: centerPoint,
+                content: "Click on the bus icons to view statistics or search by name...",
+            });
+
+            // This custom content element contains the Search widget
+            const contentWidget = new CustomContent({
+                outFields: ["*"],
+                creator: () => {
+                    return searchWidget;
+                }
+            });
+
+            searchWidget.on("search-complete", (searchResult) => {
+                searchWidget.clear();
+            });
+
+            const template = new PopupTemplate({
+            outFields: ["*"],
+            title: "Bus Stand: {name}",
+            content: [contentWidget]
+            });
+    
+            geojsonLayer.popupTemplate = template;
+        });
         
     }, []);
 
