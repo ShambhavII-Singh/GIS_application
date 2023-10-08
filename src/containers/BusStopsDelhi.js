@@ -3,7 +3,6 @@ import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
 import Fullscreen from '@arcgis/core/widgets/Fullscreen';
 import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
-import Popup from "@arcgis/core/widgets/Popup";
 import PopupTemplate from "@arcgis/core/PopupTemplate";
 import CustomContent from "@arcgis/core/popup/content/CustomContent";
 import Search from "@arcgis/core/widgets/Search";
@@ -78,18 +77,17 @@ const BusStopsDelhi = () => {
         view.ui.add(fullscreen, "top-left");
         
         view.when(() => {
-            const centerPoint = view.center.clone();
-
+            //create a search widget
             let searchWidget = new Search({
-                view: view,
+                view: view, //where to place
                 includeDefaultSources: false,
                 locationEnabled: false,
                 popupEnabled: true,
                 searchAllEnabled: false,
                 suggestionsEnabled: true,
                 sources: [{
-                    layer: geojsonLayer,
-                    searchFields: ["name"],
+                    layer: geojsonLayer, //from where  to search
+                    searchFields: ["name"], //which fields are searchable
                     displayField: "name",
                     exactMatch: false,
                     outFields: ["*"],
@@ -98,13 +96,13 @@ const BusStopsDelhi = () => {
                 }]
             });
 
+            //to create a popup that appears when no icon is selected
             view.openPopup({
                 title: "Bus Stands of New Delhi",
-                location: centerPoint,
                 content: "Click on the bus icons to view statistics or search by name...",
             });
 
-            // This custom content element contains the Search widget
+            //render the search bar widget
             const contentWidget = new CustomContent({
                 outFields: ["*"],
                 creator: () => {
@@ -112,16 +110,27 @@ const BusStopsDelhi = () => {
                 }
             });
 
+            //clear the search bar once the search is successful
             searchWidget.on("search-complete", (searchResult) => {
                 searchWidget.clear();
             });
 
+            // custom content of pollution temperature humidity
+            const contentPromise = new CustomContent({
+            outFields: ["*"],
+            creator: (event) => {
+                
+            }
+            });
+
+            // what to display when an icon is clicked
             const template = new PopupTemplate({
             outFields: ["*"],
             title: "Bus Stand: {name}",
-            content: [contentWidget]
+            content: [contentWidget,contentPromise]
             });
-    
+
+            //where to place the custom popup template
             geojsonLayer.popupTemplate = template;
         });
         
