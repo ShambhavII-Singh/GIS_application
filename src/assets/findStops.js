@@ -138,6 +138,7 @@ const findRoutes = (origin,destination) => {
     var current = origin;
     var i;
     while (current!==destination) {
+        // if the new stop already exists in the route then this means that the route is circling
         if (answer.includes(current)) {
             answer.push(destination);
             break;
