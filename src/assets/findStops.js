@@ -102,3 +102,9 @@ const findStops = (origin,destination) => {
         return answer;
     }
 }
+
+// returns the index where the data of particular quadrant is in the json file
+const findIndex = (quadrant) => {
+    return cumilativeEnder(quadrant)+(quadrant%100);
+}
+
