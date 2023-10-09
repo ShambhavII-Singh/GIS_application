@@ -129,3 +129,32 @@ const createNetwork = (origin,destination) => {
     return [network.graph(),ratings];
 }
 
+// returns the quadrants of the optimized route
+const findRoutes = (origin,destination) => {
+    const object = createNetwork(origin,destination);
+    const web = object[0];
+    const pollution = object[1];
+    var answer = [];
+    var current = origin;
+    var i;
+    while (current!==destination) {
+        if (answer.includes(current)) {
+            answer.push(destination);
+            break;
+        }
+        answer.push(current);
+        var minimum = Number.POSITIVE_INFINITY;
+        const array = web[current];
+        var addition = current;
+        for (i=0;i<array.length;i++) {
+            if (pollution[array[i]]<minimum) {
+            minimum = pollution[array[i]];
+            addition = array[i];
+            }
+        }
+        current = addition;
+    }
+    return answer;
+}
+
+export default findRoutes;
