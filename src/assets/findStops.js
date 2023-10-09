@@ -62,3 +62,43 @@ const cumilativeEnder = (quadrant) => {
         return 29;
     }
 }
+
+// returns all the bus stops that would be encountered between the origin and destination
+const findStops = (origin,destination) => {
+    const answer = [];
+    var i;
+    // when both the origin and the destination are in the same quadrant
+    if (Math.floor(origin/100)===Math.floor(destination/100)) {
+        if (destination>origin) {
+            for (i=origin;i<=destination;i++) {
+                answer.push(i);
+            }
+        }
+        else {
+            for (i=origin;i>=destination;i--) {
+                answer.push(i);
+            }
+        }
+        return answer;
+    }
+    // when the origin is in a lower quadrant
+    if (origin<destination) {
+        for (i=origin;i<origin-(origin%100)+findEnder(origin);i++) {
+            answer.push(i);
+        }
+        for (i=destination-(destination%100);i<=destination;i++) {
+            answer.push(i);
+        }
+        return answer;
+    }
+    // when the origin is in a higher quadrant
+    if (origin>destination) {
+        for (i=origin;i>=origin-(origin%100);i--) {
+            answer.push(i);
+        }
+        for (i=destination-(destination%100);i<=destination;i++) {
+            answer.push(i);
+        }
+        return answer;
+    }
+}
