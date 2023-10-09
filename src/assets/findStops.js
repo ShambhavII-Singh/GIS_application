@@ -108,3 +108,24 @@ const findIndex = (quadrant) => {
     return cumilativeEnder(quadrant)+(quadrant%100);
 }
 
+// returns the graph required for the origin and destination and the PM rating of each vertex
+const createNetwork = (origin,destination) => {
+    const network = new Graph();
+    const stops = findStops(origin,destination);
+    var ratings={};
+    var i;
+    var j;
+    for (i=0;i<stops.length;i++) {
+        ratings[stops[i]] = data[findIndex(stops[i])].PMAvg;
+    }
+    for (i=0;i<stops.length;i++) {
+        for (j=0;j<stops.length;j++) {
+            if (i!==j) {
+                network.addEdge(stops[i],stops[j]);
+            }
+        }
+    }
+    network.removeEdge(origin,destination);
+    return [network.graph(),ratings];
+}
+
