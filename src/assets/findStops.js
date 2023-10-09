@@ -45,3 +45,20 @@ const findEnder = (quadrant) => {
         return 10;
     }
 }
+
+// returns how many bus stops are present in the quadrnts preceeding
+const cumilativeEnder = (quadrant) => {
+    quadrant = Math.floor(quadrant/100);
+    if (quadrant===1) {
+        return 0;
+    }
+    if (quadrant===2) {
+        return 6;
+    }
+    if (quadrant===3) {
+        return 20;
+    }
+    if (quadrant===4) {
+        return 29;
+    }
+}
