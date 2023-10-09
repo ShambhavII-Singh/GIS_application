@@ -8,6 +8,7 @@ import CustomContent from "@arcgis/core/popup/content/CustomContent";
 import Search from "@arcgis/core/widgets/Search";
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 import { useEffect, useRef } from 'react';
+import findRoutes from '../assets/findStops';
 
 const BusStopsDelhi = () => {
     const appRef = useRef();
@@ -133,7 +134,6 @@ const BusStopsDelhi = () => {
             //where to place the custom popup template
             geojsonLayer.popupTemplate = template;
         });
-        
     }, []);
 
     return (
