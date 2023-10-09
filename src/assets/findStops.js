@@ -1,2 +1,2 @@
-import allStops from './busStops.json';
+import data from './busStops.json';
 
