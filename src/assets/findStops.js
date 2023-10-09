@@ -28,3 +28,20 @@ class Graph {
         return this.adjacencyList;
     }
 }
+
+// returns the number of bus stops in each quadrant
+const findEnder = (quadrant) => {
+    quadrant = Math.floor(quadrant/100);
+    if (quadrant===1) {
+        return 6;
+    }
+    if (quadrant===2) {
+        return 14;
+    }
+    if (quadrant===3) {
+        return 9;
+    }
+    if (quadrant===4) {
+        return 10;
+    }
+}
