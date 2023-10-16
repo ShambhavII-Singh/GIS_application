@@ -203,7 +203,6 @@ const BusStopsDelhi = () => {
                 outFields: ["*"],
 
                 creator: (event) => {
-                    
                     return (
                         `There is a total of <b>{stats.elemCount + stats.secondaryCount + stats.combinedCount}</b> private schools that reside within the state. Out of this total amount of private schools:`
                     )
