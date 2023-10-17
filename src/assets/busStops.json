@@ -33,7 +33,7 @@
         "name": "Vivek Vihar",
         "PMAvg": 99.6909027,
         "quadrant": 105,
-        "coordinates": [77.150918, 28.693861]
+        "coordinates": [77.307017, 28.666583]
     },
     {
         "name": "North Campus DU",
@@ -51,7 +51,7 @@
         "name": "Pusa IMD",
         "PMAvg": 82.58731931,
         "quadrant": 202,
-        "coordinates": [77.246233, 28.7324]
+        "coordinates": [77.192833, 28.644583]
     },
     {
         "name": "Shadipur",
@@ -81,7 +81,7 @@
         "name": "Punjabi Bagh",
         "PMAvg": 115.0047892,
         "quadrant": 207,
-        "coordinates": [77.150918, 28.693861]
+        "coordinates": [77.13716, 28.669047]
     },
     {
         "name": "Burari Crossing",
@@ -159,7 +159,7 @@
         "name": "Pusa DPCC",
         "PMAvg": 75.65458689,
         "quadrant": 306,
-        "coordinates": [77.201967, 28.54585]
+        "coordinates": [77.166983, 28.630033]
     },
     {
         "name": "NSIT Dwarka",
@@ -171,7 +171,7 @@
         "name": "R K Puram",
         "PMAvg": 97.85211907,
         "quadrant": 308,
-        "coordinates": [77.307017, 28.666583]
+        "coordinates": [77.178246, 28.564697]
     },
     {
         "name": "Sirifort",
@@ -225,7 +225,7 @@
         "name": "Lodhi Road",
         "PMAvg": 98.46385233,
         "quadrant": 408,
-        "coordinates": [77.178246, 28.564697]
+        "coordinates": [77.2237, 28.592]
     },
     {
         "name": "Dr. Karni Singh Shooting Range",
