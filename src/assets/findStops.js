@@ -108,6 +108,20 @@ const findIndex = (quadrant) => {
     return cumilativeEnder(quadrant)+(quadrant%100);
 }
 
+// point class and its method
+class Point {
+    constructor(longitude,latitude) {
+        this.object = {};
+        this.object["type"] = "point";
+        this.object["longitude"] = longitude;
+        this.object["latitude"] = latitude;
+    }
+    point() {
+        return this.object;
+    }
+}
+
+
 // returns the graph required for the origin and destination and the PM rating of each vertex
 const createNetwork = (origin,destination) => {
     const network = new Graph();
