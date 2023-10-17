@@ -121,6 +121,16 @@ class Point {
     }
 }
 
+// returns point objects for an array of stops
+const findCoordinates = (stops) => {
+    const answer = [];
+    for (var i=0;i<stops.length;i++) {
+        const object = data[findIndex(stops[i])];
+        const point = new Point(object.coordinates[0],object.coordinates[1]).point();
+        answer.push(point);
+    }
+    return answer;
+}
 
 // returns the graph required for the origin and destination and the PM rating of each vertex
 const createNetwork = (origin,destination) => {
