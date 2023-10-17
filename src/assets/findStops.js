@@ -179,7 +179,7 @@ const findRoutes = (origin,destination) => {
         }
         current = addition;
     }
-    return answer;
+    return findCoordinates(answer);
 }
 
 export default findRoutes;
