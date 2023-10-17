@@ -10,7 +10,7 @@ const routingService = (view,origin,destination) => {
 
     // create the origin and destination by clicking
     const stops = findRoutes(origin,destination);
-    
+
     // view.on("click", (event) => {
     //     if (view.graphics.length === 0) {
     //         addGraphic("origin", event.mapPoint);
