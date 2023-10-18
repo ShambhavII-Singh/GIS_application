@@ -15,19 +15,15 @@ import Graphic from '@arcgis/core/Graphic';
 import { useEffect, useRef, useState } from 'react';
 import findRoutes from '../assets/findStops';
 import routingService from '../assets/routingService';
+import stopsList from '../assets/busStopSelect.json';
+import Select from 'react-select';
 
 const BusStopsDelhi = () => {
     const appRef = useRef(); // used to identify where to place map 
-    const [origin,setOrigin] = useState(null);
-    const [destination,setDestination] = useState(null);
+    const [selectedOrigin,setSelectedOrigin] = useState(null);
+    const [selectedDestination,setSelectedDestination] = useState(null);
     const [check,setCheck] = useState(false);
 
-    function handleClick() {
-        if ((origin!==null && destination!==null) || (origin!=='' && destination!==''))  {
-            setCheck(!check);
-        }
-    }
-    
     useEffect(() => {
         //API key
         esriConfig.apiKey = "AAPK654ada81dfb94a41bebd71ff4d8f2819nvY5Wma3Hge2PT9Uy6XB14bgnNo_q1zEGBCWwTmloU6F1qtvgkiSTYiSHFlYGT5G";
@@ -86,7 +82,16 @@ const BusStopsDelhi = () => {
         });
 
         // shows the route when both origin and destination are defined
-        routingService(view,origin,destination);
+        // origin = selectedOrigin["value"];
+        // destination = selectedDestination["value"];
+        // console.log(origin, destination);
+        if (selectedDestination && selectedOrigin) {
+            routingService(view,selectedOrigin["value"],selectedDestination["value"]);
+        }
+        else {
+            routingService(view,null,null);
+        }
+        
 
         //adding a fullscreen button
         const fullscreen = new Fullscreen({
@@ -155,7 +160,7 @@ const BusStopsDelhi = () => {
             //where to place the custom popup template
             geojsonLayer.popupTemplate = template;
         });
-    }, [check]);
+    }, [selectedDestination, selectedOrigin]);
 
     return (
         <>
@@ -165,9 +170,9 @@ const BusStopsDelhi = () => {
                 </div>
             </div>
             <div>
-                <input type="number" id='origin' onChange={(event) => {setOrigin(event.target.value)}} onEmptied={() => {setOrigin(null)}}/>
-                <input type="number" id='destination' onChange={(event) => {setDestination(event.target.value)}} onEmptied={() => {setDestination(null)}}/>
-                <button onClick={handleClick} disabled={!((origin && destination) && (origin!==destination))}>Log message</button>
+                <Select options={stopsList} isSearchable={true} placeholder="Where are you right now? 🫡" value={selectedOrigin} onChange={setSelectedOrigin}/>
+                <Select options={stopsList} isSearchable={true} placeholder="Where do you wanna go? 🤔" value={selectedDestination} onChange={setSelectedDestination}/>
+                
             </div>
         </>
     )
