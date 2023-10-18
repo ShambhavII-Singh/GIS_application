@@ -165,16 +165,9 @@ const BusStopsDelhi = () => {
                 </div>
             </div>
             <div>
-            <input
-        type="number"
-        onChange={(event) => {setOrigin(event.target.value)}}
-        onEmptied={() => {setOrigin(null)}}
-      />
-      <input
-        type="number"
-        onChange={(event) => {setDestination(event.target.value)}}
-        onEmptied={() => {setDestination(null)}}
-      /><button onClick={handleClick}>Log message</button>
+                <input type="number" id='origin' onChange={(event) => {setOrigin(event.target.value)}} onEmptied={() => {setOrigin(null)}}/>
+                <input type="number" id='destination' onChange={(event) => {setDestination(event.target.value)}} onEmptied={() => {setDestination(null)}}/>
+                <button onClick={handleClick} disabled={!((origin && destination) && (origin!==destination))}>Log message</button>
             </div>
         </>
     )
