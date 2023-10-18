@@ -7,13 +7,8 @@ import PopupTemplate from "@arcgis/core/PopupTemplate";
 import CustomContent from "@arcgis/core/popup/content/CustomContent";
 import Search from "@arcgis/core/widgets/Search";
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
-import RouteParameters from '@arcgis/core/rest/support/RouteParameters';
-import FeatureSet from '@arcgis/core/rest/support/FeatureSet.js';
-import * as route from "@arcgis/core/rest/route.js";
-import Graphic from '@arcgis/core/Graphic';
 
 import { useEffect, useRef, useState } from 'react';
-import findRoutes from '../assets/findStops';
 import routingService from '../assets/routingService';
 import stopsList from '../assets/busStopSelect.json';
 import Select from 'react-select';
@@ -22,7 +17,6 @@ const BusStopsDelhi = () => {
     const appRef = useRef(); // used to identify where to place map 
     const [selectedOrigin,setSelectedOrigin] = useState(null);
     const [selectedDestination,setSelectedDestination] = useState(null);
-    const [check,setCheck] = useState(false);
 
     useEffect(() => {
         //API key
