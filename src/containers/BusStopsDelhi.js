@@ -12,17 +12,20 @@ import FeatureSet from '@arcgis/core/rest/support/FeatureSet.js';
 import * as route from "@arcgis/core/rest/route.js";
 import Graphic from '@arcgis/core/Graphic';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import findRoutes from '../assets/findStops';
 import routingService from '../assets/routingService';
 
 const BusStopsDelhi = () => {
     const appRef = useRef(); // used to identify where to place map 
-    const originRef = useRef(null); // get value of origin
-    const destinationRef = useRef(null); // get value of destination
+    const [origin,setOrigin] = useState(null);
+    const [destination,setDestination] = useState(null);
+    const [check,setCheck] = useState(false);
 
     function handleClick() {
-        console.log(findRoutes(originRef.current.value, destinationRef.current.value));
+        if ((origin!==null && destination!==null) || (origin!=='' && destination!==''))  {
+            setCheck(!check);
+        }
     }
     
     useEffect(() => {
@@ -83,9 +86,7 @@ const BusStopsDelhi = () => {
         });
 
         // shows the route when both origin and destination are defined
-        if (originRef.current.value!==null && destinationRef.current.value!==null) {
-            routingService(view,originRef.current.value,destinationRef.current.value);
-        }
+        routingService(view,origin,destination);
 
         //adding a fullscreen button
         const fullscreen = new Fullscreen({
@@ -154,7 +155,7 @@ const BusStopsDelhi = () => {
             //where to place the custom popup template
             geojsonLayer.popupTemplate = template;
         });
-    }, []);
+    }, [check]);
 
     return (
         <>
@@ -165,16 +166,14 @@ const BusStopsDelhi = () => {
             </div>
             <div>
             <input
-        ref={originRef}
         type="number"
-        id="message"
-        name="message"
+        onChange={(event) => {setOrigin(event.target.value)}}
+        onEmptied={() => {setOrigin(null)}}
       />
       <input
-        ref={destinationRef}
         type="number"
-        id="message"
-        name="message"
+        onChange={(event) => {setDestination(event.target.value)}}
+        onEmptied={() => {setDestination(null)}}
       /><button onClick={handleClick}>Log message</button>
             </div>
         </>
