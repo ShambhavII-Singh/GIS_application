@@ -21,7 +21,7 @@ class Graph {
     }
     // methos to remove an edge from the graph
     removeEdge(source, destination) {
-        this.adjacencyList[source] = this.adjacencyList[source].filter(vertex => vertex !== destination);
+        this.adjacencyList[source] = this.adjacencyList[source]?.filter(vertex => vertex !== destination);
     }
     // method to return graph json object directly
     graph() {
@@ -140,7 +140,7 @@ const createNetwork = (origin,destination) => {
     var i;
     var j;
     for (i=0;i<stops.length;i++) {
-        ratings[stops[i]] = data[findIndex(stops[i])].PMAvg;
+        ratings[stops[i]] = data[findIndex(stops[i])]?.PMAvg;
     }
     for (i=0;i<stops.length;i++) {
         for (j=0;j<stops.length;j++) {
@@ -155,10 +155,26 @@ const createNetwork = (origin,destination) => {
 
 // returns the quadrants of the optimized route
 const findRoutes = (origin,destination) => {
+    var answer = [];
+    if (!origin && !destination) {
+        return answer;
+    }
+    else {
+        if (!origin) {
+            answer.push(destination);
+            return answer;
+        }
+        if (!destination) {
+            answer.push(origin);
+            return answer;
+        }
+    }
+    if (origin===destination) {
+        answer.push(destination);
+    }
     const object = createNetwork(origin,destination);
     const web = object[0];
     const pollution = object[1];
-    var answer = [];
     var current = origin;
     var i;
     while (current!==destination) {
