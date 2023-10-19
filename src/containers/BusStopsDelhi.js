@@ -3,9 +3,6 @@ import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
 import Fullscreen from '@arcgis/core/widgets/Fullscreen';
 import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
-import PopupTemplate from "@arcgis/core/PopupTemplate";
-import CustomContent from "@arcgis/core/popup/content/CustomContent";
-import Search from "@arcgis/core/widgets/Search";
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 
 import { useEffect, useRef, useState } from 'react';
