@@ -20,37 +20,27 @@ const BusStopsDelhi = () => {
     useEffect(() => {
         //API key
         esriConfig.apiKey = "AAPK654ada81dfb94a41bebd71ff4d8f2819nvY5Wma3Hge2PT9Uy6XB14bgnNo_q1zEGBCWwTmloU6F1qtvgkiSTYiSHFlYGT5G";
-        
-        //custom svg marker for bus stops
-        const picSymbol = new PictureMarkerSymbol({
-            "url": './directions_bus.svg',
-            "width":20,
-            "height":20,
-        });
-
-        //renders a bus stop icon for each bus stop
-        const renderer = {
-            type: "simple",
-            field: "name",
-            symbol: picSymbol, //bus icon
-        };
 
         //contains data for the layer to render all bus stops
         const geojsonLayer = new GeoJSONLayer({
             url: "./busStopsGeo.json", //data
-            renderer: renderer, //marker
+            renderer: {
+                type: "simple",
+                field: "name",
+                symbol: new PictureMarkerSymbol({
+                    "url": './directions_bus.svg',
+                    "width":20,
+                    "height":20,
+                }), //bus icon
+            }, //marker
         });
-
-        //create a map object
-        const map = new Map({
-            basemap: "arcgis-navigation", // Basemap layer service
-            layers: [geojsonLayer] //bus stops
-        });
-        
 
         //customize how the map should look
         const view = new MapView({
-            map: map, //map object
+            map: new Map({
+                basemap: "arcgis-navigation", // Basemap layer service
+                layers: [geojsonLayer] //bus stops
+            }), //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
             zoom: 11, //default zoom level
             container: appRef.current, //where to place the map
@@ -69,19 +59,14 @@ const BusStopsDelhi = () => {
 
         // shows the route when both origin and destination are defined
         if (selectedDestination && selectedOrigin) {
-            routingService(map,view,selectedOrigin["value"],selectedDestination["value"]);
-        }
-        else {
-            routingService(map,view,null,null); // show nothing when both source and destination are not given
+            routingService(view,selectedOrigin["value"],selectedDestination["value"]);
         }
 
-        //adding a fullscreen button
-        const fullscreen = new Fullscreen({
+        //fullscreen button appears on the top left side
+        view.ui.add(new Fullscreen({
             view: view, //where to place the widget
             element: appRef.current //what to expand
-        });
-        //fullscreen button appears on the top left side
-        view.ui.add(fullscreen, "top-left");
+        }), "top-left");
 
         //creates a custom popup for each bus stop
         customPopup(view,geojsonLayer);
