@@ -4,6 +4,18 @@ import Search from "@arcgis/core/widgets/Search";
 
 const customPopup = (view,geojsonLayer) => {
     view.when(() => {
+
+        //to create a popup that appears when no icon is selected
+        view.openPopup({
+            title: "Bus Stands of New Delhi",
+            content: `<ul>
+                        <li>Click on the bus icons for more information</li>
+                        <li>Drag to navigate through the map</li>
+                        <li>Click on any bus icon to search by name</li>
+                        <li>Use the drop-downs given below for calculating the cleanest route</li>
+                    </ul>`,
+        });
+
         //create a search widget
         let searchWidget = new Search({
             view: view, //where to place
@@ -23,23 +35,6 @@ const customPopup = (view,geojsonLayer) => {
             }]
         });
 
-        //to create a popup that appears when no icon is selected
-        view.openPopup({
-            title: "Bus Stands of New Delhi",
-            content: `<ul>
-                        <li>Click on the bus icons for more information</li>
-                        <li>Drag to navigate through the map</li>
-                    </ul>`,
-        });
-
-        //render the search bar widget
-        const contentWidget = new CustomContent({
-            outFields: ["*"],
-            creator: () => {
-                return searchWidget;
-            }
-        });
-
         //clear the search bar once the search is successful
         searchWidget.on("search-complete", () => {
             searchWidget.clear();
@@ -49,8 +44,14 @@ const customPopup = (view,geojsonLayer) => {
             view.goTo(searchResult.extent);
         })
 
+        //render the search bar widget
+        const contentWidget = new CustomContent({
+            outFields: ["*"],
+            creator: () => {
+                return searchWidget;
+            }
+        });
 
-        
         // This custom content contains the resulting promise from the query
         const contentPromise = new CustomContent({
             outFields: ["*"],
@@ -68,15 +69,13 @@ const customPopup = (view,geojsonLayer) => {
                 `)
             }
         });
-        // what to display when an icon is clicked
-        const template = new PopupTemplate({
-        outFields: ["*"],
-        title: "Bus Stand: {name}",
-        content: [contentWidget,contentPromise]
-        });
 
         //where to place the custom popup template
-        geojsonLayer.popupTemplate = template;
+        geojsonLayer.popupTemplate = new PopupTemplate({
+            outFields: ["*"],
+            title: "Bus Stand: {name}",
+            content: [contentWidget,contentPromise]
+            });
     });
 }
 
