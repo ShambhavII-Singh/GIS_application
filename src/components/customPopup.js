@@ -8,12 +8,16 @@ const customPopup = (view,geojsonLayer) => {
         //to create a popup that appears when no icon is selected
         view.openPopup({
             title: "Bus Stands of New Delhi",
-            content: `<ul>
-                        <li>Click on the bus icons for more information</li>
-                        <li>Drag to navigate through the map</li>
-                        <li>Click on any bus icon to search by name</li>
-                        <li>Use the drop-downs given below for calculating the cleanest route</li>
-                    </ul>`,
+            content: `<div>
+                        <p>General instructions:</p>
+                        <ul>
+                            <li>Click on the bus icons for more information</li>
+                            <li>Drag to navigate through the map</li>
+                            <li>Use two fingers to zoom in and out</li>
+                            <li>Click on any bus icon to search by name</li>
+                            <li>Use the drop-downs given below for calculating the cleanest route</li>
+                        </ul>
+                    </div>`,
         });
 
         //create a search widget

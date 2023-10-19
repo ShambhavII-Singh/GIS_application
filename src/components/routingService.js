@@ -41,7 +41,7 @@ const routingService = (view,origin,destination) => {
             data.routeResults.forEach(function(result) {
                 result.route.symbol = {
                     type: "simple-line",
-                    color: [5, 150, 255],
+                    color: "#F40505",
                     width: 3
                 };
                 view.graphics.add(result.route);
