@@ -9,9 +9,10 @@ import Search from "@arcgis/core/widgets/Search";
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 
 import { useEffect, useRef, useState } from 'react';
-import routingService from '../assets/routingService';
+import routingService from '../components/routingService';
 import stopsList from '../assets/busStopSelect.json';
 import Select from 'react-select';
+
 
 const BusStopsDelhi = () => {
     const appRef = useRef(); // used to identify where to place map 
@@ -29,12 +30,6 @@ const BusStopsDelhi = () => {
             "height":20,
         });
 
-        //renders an on-click tooltip
-        const template = {
-            title: "{name}",
-            content: "PM2.5 rating: {PMAvg} (Average) & {PMMax} (Maximum)",
-        };
-
         //renders a bus stop icon for each bus stop
         const renderer = {
             type: "simple",
@@ -45,7 +40,6 @@ const BusStopsDelhi = () => {
         //contains data for the layer to render all bus stops
         const geojsonLayer = new GeoJSONLayer({
             url: "./busStopsGeo.json", //data
-            popupTemplate: template, //tooltip
             renderer: renderer, //marker
         });
 
@@ -72,20 +66,16 @@ const BusStopsDelhi = () => {
                 visibleElements: {
                     closeButton: false,
                 }
-            }
+            },
         });
 
         // shows the route when both origin and destination are defined
-        // origin = selectedOrigin["value"];
-        // destination = selectedDestination["value"];
-        // console.log(origin, destination);
         if (selectedDestination && selectedOrigin) {
-            routingService(view,selectedOrigin["value"],selectedDestination["value"]);
+            routingService(map,view,selectedOrigin["value"],selectedDestination["value"]);
         }
         else {
-            routingService(view,null,null);
+            routingService(map,view,null,null);
         }
-        
 
         //adding a fullscreen button
         const fullscreen = new Fullscreen({
@@ -102,23 +92,26 @@ const BusStopsDelhi = () => {
                 includeDefaultSources: false,
                 locationEnabled: false,
                 popupEnabled: true,
-                searchAllEnabled: false,
                 suggestionsEnabled: true,
+                minSuggestCharacters: 1,
+                maxSuggestions:20,
                 sources: [{
                     layer: geojsonLayer, //from where  to search
                     searchFields: ["name"], //which fields are searchable
                     displayField: "name",
                     exactMatch: false,
                     outFields: ["*"],
-                    name: "Stand name",
-                    placeholder: "Search by name...",
+                    placeholder: "Bus Stand",
                 }]
             });
 
             //to create a popup that appears when no icon is selected
             view.openPopup({
                 title: "Bus Stands of New Delhi",
-                content: "Click on the bus icons to view statistics or search by name...",
+                content: `<ul>
+                            <li>Click on the bus icons for more information</li>
+                            <li>Drag to navigate through the map</li>
+                        </ul>`,
             });
 
             //render the search bar widget
@@ -130,18 +123,31 @@ const BusStopsDelhi = () => {
             });
 
             //clear the search bar once the search is successful
-            searchWidget.on("search-complete", (searchResult) => {
+            searchWidget.on("search-complete", () => {
                 searchWidget.clear();
             });
 
+            searchWidget.on("select-result", (searchResult) => {
+                view.goTo(searchResult.extent);
+            })
+
+    
+            
             // This custom content contains the resulting promise from the query
             const contentPromise = new CustomContent({
                 outFields: ["*"],
-
                 creator: (event) => {
-                    return (
-                        `There is a total of <b>{stats.elemCount + stats.secondaryCount + stats.combinedCount}</b> private schools that reside within the state. Out of this total amount of private schools:`
-                    )
+                    const feature = event.graphic.attributes;
+                    return (`
+                        <div>
+                            <p>Below are the statistics for <b>${feature.name}</b> Bus Stand:</p>
+                            <ul>
+                                <li><b>Average PM2.5 Level:</b> ${Number(feature.PMAvg).toFixed(3)}</li>
+                                <li><b>Maximum PM2.5 Level:</b> ${Number(feature.PMMax).toFixed(3)}</li>
+                            </ul>
+                            <sup>*from months January to July in the year 2022</sup>
+                        </div>
+                    `)
                 }
             });
             // what to display when an icon is clicked
@@ -166,7 +172,6 @@ const BusStopsDelhi = () => {
             <div>
                 <Select options={stopsList} isSearchable={true} placeholder="Where are you right now? 🫡" value={selectedOrigin} onChange={setSelectedOrigin}/>
                 <Select options={stopsList} isSearchable={true} placeholder="Where do you wanna go? 🤔" value={selectedDestination} onChange={setSelectedDestination}/>
-                
             </div>
         </>
     )
