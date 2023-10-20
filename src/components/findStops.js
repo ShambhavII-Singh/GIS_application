@@ -132,6 +132,48 @@ const findCoordinates = (stops) => {
     return answer;
 }
 
+// route class and its method
+class Route {
+    constructor(places,info,highest) {
+        this.object = {};
+        this.object["places"] = places;
+        this.object["info"] = info;
+        this.object["highest"] = highest;
+    }
+    route() {
+        return this.object;
+    }
+}
+
+// returns statistics for an array of stops
+const routeStatistics = (stops) => {
+    var sum = 0;
+    var maximum = 0;
+    for (var i=0;i<stops.length;i++) {
+        const object = data[findIndex(stops[i])];
+        sum += object.PMAvg;
+        if (data[findIndex(stops[maximum])].PMAvg < object.PMAvg) {
+            maximum = i;
+        } 
+    }  
+    var rating;
+    const average = sum/stops.length;
+    if (average>=0 && average<=100) {
+        rating = 3;
+    }
+    else if (average>=101 && average<=300) {
+        rating = 2;
+    }
+    else if (average>=300) {
+        rating = 1;
+    }
+    const places = {"origin": data[findIndex(stops[0])].name, "destination": data[findIndex(stops[stops.length-1])].name}
+    const info = {"average" : average, "rating" : rating};
+    const highest = {"name" : data[findIndex(stops[maximum])].name, "aqi" : data[findIndex(stops[maximum])].PMAvg};
+    const answer = new Route(places,info,highest).route();
+    return answer;
+}
+
 // returns the graph required for the origin and destination and the PM rating of each vertex
 const createNetwork = (origin,destination) => {
     const network = new Graph();
@@ -195,7 +237,7 @@ const findRoutes = (origin,destination) => {
         }
         current = addition;
     }
-    return findCoordinates(answer);
+    return [findCoordinates(answer),routeStatistics(answer)];
 }
 
 export default findRoutes;
