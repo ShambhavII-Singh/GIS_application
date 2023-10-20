@@ -63,12 +63,14 @@ const customPopup = (view,geojsonLayer) => {
                 const feature = event.graphic.attributes;
                 return (`
                     <div>
-                        <p>Below are the statistics for <b>${feature.name}</b> Bus Stand:</p>
+                        <p>Below are the statistics for <b>${feature.name}</b> Bus Stand<sup>*</sup>:</p>
                         <ul>
-                            <li><b>Average PM2.5 Level:</b> ${Number(feature.PMAvg).toFixed(3)}</li>
-                            <li><b>Maximum PM2.5 Level:</b> ${Number(feature.PMMax).toFixed(3)}</li>
+                            <li><b>Average PM 2.5 Level:</b> ${Number(feature.PMAvg).toFixed(3)}</li>
+                            <li><b>Maximum PM 2.5 Level:</b> ${Number(feature.PMMax).toFixed(3)}</li>
+                            <li><b>Average PM 10 Level:</b> ${Number(feature.PM10Avg).toFixed(3)}</li>
+                            <li><b>Maximum PM 10 Level:</b> ${Number(feature.PM10Max).toFixed(3)}</li>
                         </ul>
-                        <sup>*from months January to July in the year 2022</sup>
+                        <p align="right"><sup>*from months January to July in the year 2022</sup></p>
                     </div>
                 `)
             }
