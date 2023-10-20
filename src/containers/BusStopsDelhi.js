@@ -42,7 +42,7 @@ const BusStopsDelhi = () => {
                 layers: [geojsonLayer] //bus stops
             }), //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
-            zoom: 11, //default zoom level
+            zoom: 10.5, //default zoom level
             container: appRef.current, //where to place the map
             popup: {
                 defaultPopupTemplateEnabled: false,
@@ -53,20 +53,20 @@ const BusStopsDelhi = () => {
                 },
                 visibleElements: {
                     closeButton: false,
-                }
+                },
             },
         });
-
-        // shows the route when both origin and destination are defined
-        if (selectedDestination && selectedOrigin) {
-            routingService(view,selectedOrigin["value"],selectedDestination["value"]);
-        }
 
         //fullscreen button appears on the top left side
         view.ui.add(new Fullscreen({
             view: view, //where to place the widget
             element: appRef.current //what to expand
         }), "top-left");
+
+        // shows the route when both origin and destination are defined
+        if (selectedDestination && selectedOrigin) {
+            routingService(view,selectedOrigin["value"],selectedDestination["value"]);
+        }
 
         //creates a custom popup for each bus stop
         customPopup(view,geojsonLayer);
