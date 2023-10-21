@@ -53,7 +53,7 @@ const routingService = (view,origin,destination) => {
         route
         .solve(routeUrl, routeParams)
         .then(function(data) {
-            
+            var routeLength = (Number(window.localStorage.getItem("routeLength"))+data.routeResults[0].route.attributes["Total_Kilometers"]).toString();
             
             window.localStorage.setItem("routeLength",routeLength);
             console.log(window.localStorage.getItem("routeLength"))
