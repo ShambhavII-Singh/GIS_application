@@ -56,7 +56,7 @@ const routingService = (view,origin,destination) => {
             var routeLength = (Number(window.localStorage.getItem("routeLength"))+data.routeResults[0].route.attributes["Total_Kilometers"]).toString();
             
             window.localStorage.setItem("routeLength",routeLength);
-            console.log(window.localStorage.getItem("routeLength"))
+            
             data.routeResults.forEach(function(result) {             
                 result.route.symbol = {
                     type: "simple-line",
