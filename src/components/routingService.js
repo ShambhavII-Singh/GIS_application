@@ -1,13 +1,8 @@
-import React, { useState } from 'react';
 import RouteParameters from '@arcgis/core/rest/support/RouteParameters';
 import FeatureSet from '@arcgis/core/rest/support/FeatureSet.js';
 import * as route from "@arcgis/core/rest/route.js";
 import Graphic from '@arcgis/core/Graphic';
 import findRoutes from './findStops';
-import * as geometryEngine from '@arcgis/core/geometry/geometryEngine'
-
-import Lottie from 'lottie-react';
-import breathingAnimation from '../assets/animations/breathingAnimation.json';
 
 const routingService = (view,origin,destination) => {
     // icon svg string
