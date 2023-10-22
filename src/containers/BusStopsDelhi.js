@@ -20,10 +20,11 @@ const BusStopsDelhi = () => {
     useEffect(() => {
         //API key
         esriConfig.apiKey = "AAPK654ada81dfb94a41bebd71ff4d8f2819nvY5Wma3Hge2PT9Uy6XB14bgnNo_q1zEGBCWwTmloU6F1qtvgkiSTYiSHFlYGT5G";
-
+        
         //contains data for the layer to render all bus stops
         const geojsonLayer = new GeoJSONLayer({
             url: "./busStopsGeo.json", //data
+            //labelingInfo: labelClass,
             renderer: {
                 type: "simple",
                 field: "name",
@@ -42,7 +43,7 @@ const BusStopsDelhi = () => {
                 layers: [geojsonLayer] //bus stops
             }), //map object
             center: [77.216721,28.644800], //cooordinates of the default center of the map
-            zoom: 10.5, //default zoom level
+            zoom: 11, //default zoom level
             container: appRef.current, //where to place the map
             popup: {
                 defaultPopupTemplateEnabled: false,
