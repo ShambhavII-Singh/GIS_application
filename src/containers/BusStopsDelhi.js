@@ -6,10 +6,13 @@ import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 
 import { useEffect, useRef, useState } from 'react';
+import Select from 'react-select';
+
 import routingService from '../components/routingService';
 import customPopup from '../components/customPopup';
-import stopsList from '../assets/busStopSelect.json';
-import Select from 'react-select';
+import stopsList from '../assets/json/busStopSelect.json';
+import routeLabels from '../components/routeLabels';
+import GeoJsonObject from '../assets/json/busStopsGeo.json';
 
 
 const BusStopsDelhi = () => {
@@ -20,28 +23,43 @@ const BusStopsDelhi = () => {
     useEffect(() => {
         //API key
         esriConfig.apiKey = "AAPK654ada81dfb94a41bebd71ff4d8f2819nvY5Wma3Hge2PT9Uy6XB14bgnNo_q1zEGBCWwTmloU6F1qtvgkiSTYiSHFlYGT5G";
-        
+
         //contains data for the layer to render all bus stops
         const geojsonLayer = new GeoJSONLayer({
-            url: "./busStopsGeo.json", //data
-            //labelingInfo: labelClass,
+            url: URL.createObjectURL(new Blob([JSON.stringify(GeoJsonObject)],{type: 'application/json'})), //data
+            labelingInfo: [{
+                labelExpressionInfo: {expression: "$feature.name"},
+                labelPlacement: "center-right",
+                symbol: {
+                    type: "text",
+                    font: {
+                        size: 9,
+                        family: "Noto Sans"
+                    },
+                    horizontalAlignment: "left",
+                    color: "#2b2b2b"
+                }
+            }],
             renderer: {
                 type: "simple",
                 field: "name",
                 symbol: new PictureMarkerSymbol({
                     "url": './directions_bus.svg',
-                    "width":20,
-                    "height":20,
+                    "width": 20,
+                    "height": 20,
                 }), //bus icon
-            }, //marker
+            } //marker
+        });
+
+        //map object
+        const map =  new Map({
+            basemap: "arcgis-navigation", // Basemap layer service
+            layers: [geojsonLayer] //bus stops
         });
 
         //customize how the map should look
         const view = new MapView({
-            map: new Map({
-                basemap: "arcgis-navigation", // Basemap layer service
-                layers: [geojsonLayer] //bus stops
-            }), //map object
+            map: map,
             center: [77.216721,28.644800], //cooordinates of the default center of the map
             zoom: 11, //default zoom level
             container: appRef.current, //where to place the map
@@ -66,6 +84,9 @@ const BusStopsDelhi = () => {
 
         // shows the route when both origin and destination are defined
         if (selectedDestination && selectedOrigin) {
+            // add labels
+            map.layers.add(routeLabels(selectedOrigin["value"],selectedDestination["value"]));
+            // show calculated route on map
             routingService(view,selectedOrigin["value"],selectedDestination["value"]);
         }
 
@@ -76,6 +97,9 @@ const BusStopsDelhi = () => {
 
     return (
         <>
+            <script type="text/plain" id="label-expression">
+                return Concatenate([$feature.name,Round($feature.PMAvg)],TextFormatting.NewLine);
+            </script>
             <div style={{width:"90%"}}>
                 <div ref={appRef}>
                     <div style={{height:"90vh"}}></div>
