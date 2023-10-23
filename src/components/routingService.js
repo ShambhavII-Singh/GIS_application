@@ -10,8 +10,9 @@ const routingService = (view,origin,destination) => {
     const routeUrl = "https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World";
 
     // create the origin and destination by clicking
-    const stops = findRoutes(origin,destination)[0];
-    const stats = findRoutes(origin,destination)[1];
+    const object = findRoutes(origin,destination);
+    const stops = object[0];
+    const stats = object[1];
 
     // add the stop symbol to the map
     const addGraphic = (type, point) => {
@@ -55,10 +56,10 @@ const routingService = (view,origin,destination) => {
                     color: "#F40505",
                     width: 3
                 };
-                view.graphics.add(result.route);
-                console.log(result.route)
                 // zoom to the route shown
                 view.goTo(result.route.geometry);
+                // add the route grahics
+                view.graphics.add(result.route);
             });
         })
         .catch(function(error){
@@ -68,6 +69,11 @@ const routingService = (view,origin,destination) => {
 
     // show the route statistics
     const showStatistics = (stats) => {
+        const script = document.createElement("script");
+        script.setAttribute("type","text/plain");
+        script.setAttribute("id","label-expression");
+        script.innerHTML = "return Concatenate([$feature.name,Round($feature.PMAvg)],TextFormatting.NewLine);";
+
         const statistics = document.createElement("div");
         statistics.classList = "esri-widget esri-widget--panel";
         statistics.style.width = "100%";
@@ -75,6 +81,7 @@ const routingService = (view,origin,destination) => {
         statistics.style.padding = "15px";
         statistics.style.fontSize = "14px"
         statistics.style.boxShadow = "0 1px 4px rgba(0, 0, 0, .8)"
+
         const heading = document.createElement("h3");
         heading.innerHTML = "Route Statistics";
         statistics.appendChild(heading);
@@ -132,9 +139,8 @@ const routingService = (view,origin,destination) => {
         }
         getRoute(stops[i],stops[i+1],parameterOrigin,parameterDestination); // Call the route service
     }    
-    
+
     if (origin!==destination) {
-        
         view.ui.add(showStatistics(stats), "bottom-right");
     }
 }
