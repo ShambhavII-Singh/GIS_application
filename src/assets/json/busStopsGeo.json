@@ -1,0 +1,551 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.144, 28.7965]
+      },
+      "properties": {
+        "name": "Alipur",
+        "PMAvg": 92.32237991,
+        "PMMax": 531,
+        "PM10Avg": 215.1645306,
+        "PM10Max": 928
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.3105, 28.6586]
+      },
+      "properties": {
+        "name": "Anand Vihar",
+        "PMAvg": 121.8771472,
+        "PMMax": 960,
+        "PM10Avg": 309.0106267,
+        "PM10Max": 997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.165532, 28.701819]
+      },
+      "properties": {
+        "name": "Ashok Vihar",
+        "PMAvg": 94.73513738,
+        "PMMax": 727,
+        "PM10Avg": 223.4238573,
+        "PM10Max": 997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.13035582080687, 28.47691412365905]
+      },
+      "properties": {
+        "name": "Aya Nagar",
+        "PMAvg": 64.34974453,
+        "PMMax": 936.17,
+        "PM10Avg": 156.4146313,
+        "PM10Max": 993.76
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0352, 28.7995]
+      },
+      "properties": {
+        "name": "Bawana",
+        "PMAvg": 108.0003172,
+        "PMMax": 743,
+        "PM10Avg": 266.8832015,
+        "PM10Max": 986
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.196368, 28.728714]
+      },
+      "properties": {
+        "name": "Burari Crossing",
+        "PMAvg": 97.68754058,
+        "PMMax": 530.56,
+        "PM10Avg": 230.3187218,
+        "PM10Max": 987.84
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.273998, 28.551088]
+      },
+      "properties": {
+        "name": "CRRI Mathura Road",
+        "PMAvg": 82.17012259,
+        "PMMax": 719.09,
+        "PM10Avg": 214.6872815,
+        "PM10Max": 975.65
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.230169, 28.657839]
+      },
+      "properties": {
+        "name": "Chandni Chowk",
+        "PMAvg": 88.14785308,
+        "PMMax": 770.7,
+        "PM10Avg": 260.9992143,
+        "PM10Max": 993.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.1168828658, 28.7432986935]
+      },
+      "properties": {
+        "name": "DTU",
+        "PMAvg": 111.9448432,
+        "PMMax": 657.2,
+        "PM10Avg": 209.5212892,
+        "PM10Max": 1000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.266835, 28.4997587]
+      },
+      "properties": {
+        "name": "Dr. Karni Singh Shooting Range",
+        "PMAvg": 82.88253012,
+        "PMMax": 516,
+        "PM10Avg": 203.0218831,
+        "PM10Max": 979
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.0671, 28.5658]
+      },
+      "properties": {
+        "name": "Dwarka-Sector 8",
+        "PMAvg": 90.25198381,
+        "PMMax": 542,
+        "PM10Avg": 269.5259107,
+        "PM10Max": 1000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.291417, 28.655933]
+      },
+      "properties": {
+        "name": "East Arjun Nagar",
+        "PMAvg": 103.316729,
+        "PMMax": 646,
+        "PM10Avg": 223.0440855,
+        "PM10Max": 789.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.10900225, 28.56293525]
+      },
+      "properties": {
+        "name": "IGI Airport (T3)",
+        "PMAvg": 79.16524054,
+        "PMMax": 779.48,
+        "PM10Avg": 174.2629722,
+        "PM10Max": 966.13
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.2999,28.6759]
+      },
+      "properties": {
+        "name": "IBHAS Dilshad Garden",
+        "PMAvg": 84.92389458,
+        "PMMax": 498.5,
+        "PM10Avg": 211.2096496,
+        "PM10Max": 937.1
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [77.244433, 28.627967]
+      },
+      "properties": {
+        "name": "ITO",
+        "PMAvg": 95.34971792,
+        "PMMax": 646,
+        "PM10Avg": 181.7711502,
+        "PM10Max": 946
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.1648, 28.7286]
+      },
+      "properties": {
+          "name": "Jahangirpuri",
+          "PMAvg": 122.2657589,
+          "PMMax": 769,
+          "PM10Avg": 269.5259107,
+          "PM10Max": 995
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.2334405, 28.5901157]
+      },
+      "properties": {
+          "name": "Jawaharlal Nehru Stadium",
+          "PMAvg": 83.68018964,
+          "PMMax": 493,
+          "PM10Avg": 192.2287518,
+          "PM10Max": 922
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.2237, 28.592]
+      },
+      "properties": {
+          "name": "Lodhi Road",
+          "PMAvg": 98.46385233,
+          "PMMax": 998.6,
+          "PM10Avg": 151.8173424,
+          "PM10Max": 999.9
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.239986, 28.611043]
+      },
+      "properties": {
+          "name": "Major Dhyan Chand National Stadium",
+          "PMAvg": 92.54140988,
+          "PMMax": 467,
+          "PM10Avg": 218.9908123,
+          "PM10Max": 917
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.2168625, 28.52484]
+      },
+      "properties": {
+          "name": "Mandir Marg",
+          "PMAvg": 88.32654328,
+          "PMMax": 413,
+          "PM10Avg": 195.2290979,
+          "PM10Max": 981
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.02614, 28.68662]
+      },
+      "properties": {
+          "name": "Mundka",
+          "PMAvg": 109.1788468,
+          "PMMax": 763,
+          "PM10Avg": 281.4167816,
+          "PM10Max": 994
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.034871, 28.608333]
+      },
+      "properties": {
+          "name": "NSIT Dwarka",
+          "PMAvg": 111.4052739,
+          "PMMax": 508.8,
+          "PM10Avg": 223.0440855,
+          "PM10Max": 789.7
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [76.977508, 28.615127]
+      },
+      "properties": {
+          "name": "Najafgarh",
+          "PMAvg": 70.81028071,
+          "PMMax": 367,
+          "PM10Avg": 177.4445235,
+          "PM10Max": 965
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.088107, 28.851958]
+      },
+      "properties": {
+          "name": "Narela",
+          "PMAvg": 104.2917141,
+          "PMMax": 517,
+          "PM10Avg": 246.1656269,
+          "PM10Max": 890
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.253917, 28.568283]
+      },
+      "properties": {
+          "name": "Nehru Nagar",
+          "PMAvg": 106.1176002,
+          "PMMax": 968,
+          "PM10Avg": 214.092676,
+          "PM10Max": 985
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.214833, 28.688417]
+      },
+      "properties": {
+          "name": "North Campus DU",
+          "PMAvg": 82.88585662,
+          "PMMax": 800.2,
+          "PM10Avg": 192.9807373,
+          "PM10Max": 967.43
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.27912485599519, 28.507134530628505]
+      },
+      "properties": {
+          "name": "Okhla Phase-2",
+          "PMAvg": 85.69526612,
+          "PMMax": 525,
+          "PM10Avg": 226.8549231,
+          "PM10Max": 990
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.277125265, 28.59889509]
+      },
+      "properties": {
+          "name": "Patparganj",
+          "PMAvg": 100.0237263,
+          "PMMax": 490,
+          "PM10Avg": 215.5462426,
+          "PM10Max": 990
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.13716, 28.669047]
+      },
+      "properties": {
+          "name": "Punjabi Bagh",
+          "PMAvg": 115.0047892,
+          "PMMax": 796,
+          "PM10Avg": 242.5800585,
+          "PM10Max": 997
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.192833, 28.644583]
+      },
+      "properties": {
+          "name" : "Pusa IMD",
+          "PMAvg": 82.58731931,
+          "PMMax": 576,
+          "PM10Avg": 171.5056634,
+          "PM10Max": 985.56
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.166983, 28.630033]
+      },
+      "properties": {
+          "name": "Pusa DPCC",
+          "PMAvg": 75.65458689,
+          "PMMax": 846.34,
+          "PM10Avg": 221.8295676,
+          "PM10Max": 806
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.178246, 28.564697]
+      },
+      "properties": {
+          "name": "R K Puram",
+          "PMAvg": 97.85211907,
+          "PMMax": 763,
+          "PM10Avg": 210.6037426,
+          "PM10Max": 993
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.124483, 28.708246]
+      },
+      "properties": {
+          "name": "Rohini",
+          "PMAvg": 104.0814359,
+          "PMMax": 554,
+          "PM10Avg": 243.132294,
+          "PM10Max": 900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.1555, 28.653117]
+      },
+      "properties": {
+          "name": "Shadipur",
+          "PMAvg": 81.58906867,
+          "PMMax": 357.8,
+          "PM10Avg": 223.3710217,
+          "PM10Max": 979.6
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.22833998363114, 28.55322825493434]
+      },
+      "properties": {
+          "name": "Sirifort",
+          "PMAvg": 88.41696601,
+          "PMMax": 850,
+          "PM10Avg": 211.7017898,
+          "PM10Max": 1000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.246233, 28.7324]
+      },
+      "properties": {
+          "name": "Sonia Vihar",
+          "PMAvg": 89.50481928,
+          "PMMax": 500,
+          "PM10Avg": 238.2873969,
+          "PM10Max": 995
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.201967, 28.54585]
+      },
+      "properties": {
+          "name": "Sri Aurobindo Marg",
+          "PMAvg": 75.64695494,
+          "PMMax": 370,
+          "PM10Avg": 178.2585148,
+          "PM10Max": 900
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.307017, 28.666583]
+      },
+      "properties": {
+          "name": "Vivek Vihar",
+          "PMAvg": 99.6909027,
+          "PMMax": 679,
+          "PM10Avg": 245.5600361,
+          "PM10Max": 978
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+          "type": "Point",
+          "coordinates": [77.150918, 28.693861]
+      },
+      "properties": {
+          "name": "Wazirpur",
+          "PMAvg": 107.9948983,
+          "PMMax": 611,
+          "PM10Avg": 243.3178416,
+          "PM10Max": 915
+      }
+    }
+  ]
+}
