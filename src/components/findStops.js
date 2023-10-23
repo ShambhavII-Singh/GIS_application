@@ -132,6 +132,7 @@ const findCoordinates = (stops) => {
     return answer;
 }
 
+// returns geoJSON object for an array of stops
 const geojsonObject = (stops) => {
     var geoJson = {
         "type": "FeatureCollection",
