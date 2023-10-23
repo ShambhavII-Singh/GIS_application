@@ -1,4 +1,4 @@
-import data from '../assets/busStops.json';
+import data from '../assets/json/busStops.json';
 
 // graph class with its methods
 class Graph {
@@ -132,6 +132,29 @@ const findCoordinates = (stops) => {
     return answer;
 }
 
+const geojsonObject = (stops) => {
+    var geoJson = {
+        "type": "FeatureCollection",
+        "features": []
+    }
+    for (var i=0;i<stops.length;i++) {
+        const object = data[findIndex(stops[i])];
+        const feature = {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": object.coordinates
+            },
+            "properties": {
+                "name": object.name,
+                "PMAvg": object.PMAvg,
+            }
+        };
+        geoJson.features.push(feature);
+    }
+    return geoJson;
+}
+
 // route class and its method
 class Route {
     constructor(places,info,highest) {
@@ -243,7 +266,7 @@ const findRoutes = (origin,destination) => {
         }
         current = addition;
     }
-    return [findCoordinates(answer),routeStatistics(answer)];
+    return [findCoordinates(answer),routeStatistics(answer),geojsonObject(answer)];
 }
 
 export default findRoutes;
