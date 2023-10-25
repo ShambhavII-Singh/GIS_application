@@ -1,5 +1,11 @@
 @import "https://js.arcgis.com/4.27/esri/themes/light/main.css";
 
+.esri-popup__footer {   display: none !important; }
+.esri-feature__content-node h3 {
+  margin-block-start: 0.7em !important; 
+  margin-block-end: 0px !important;
+}
+
 .App {
   text-align: left;
 }
