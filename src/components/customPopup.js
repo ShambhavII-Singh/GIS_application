@@ -1,55 +1,15 @@
 import PopupTemplate from "@arcgis/core/PopupTemplate";
 import CustomContent from "@arcgis/core/popup/content/CustomContent";
-import Search from "@arcgis/core/widgets/Search";
+import searchFunctionality from "./searchFunctionality";
 
 const customPopup = (view,geojsonLayer) => {
     view.when(() => {
-
-        //to create a popup that appears when no icon is selected
-        view.openPopup({
-            title: "Bus Stands of New Delhi",
-            content: `<div>
-                        <p>General instructions:</p>
-                        <ul>
-                            <li>Click on the bus icons for more information</li>
-                            <li>Use the drop-downs given below for calculating the cleanest route</li>
-                        </ul>
-                    </div>`,
-        });
-
-        //create a search widget
-        let searchWidget = new Search({
-            view: view, //where to place
-            includeDefaultSources: false,
-            locationEnabled: false,
-            popupEnabled: true,
-            suggestionsEnabled: true,
-            minSuggestCharacters: 1,
-            maxSuggestions:20,
-            sources: [{
-                layer: geojsonLayer, //from where  to search
-                searchFields: ["name"], //which fields are searchable
-                displayField: "name",
-                exactMatch: false,
-                outFields: ["*"],
-                placeholder: "Bus Stand",
-            }]
-        });
-
-        //clear the search bar once the search is successful
-        searchWidget.on("search-complete", () => {
-            searchWidget.clear();
-        });
-
-        searchWidget.on("select-result", (searchResult) => {
-            view.goTo(searchResult.extent);
-        })
 
         //render the search bar widget
         const contentWidget = new CustomContent({
             outFields: ["*"],
             creator: () => {
-                return searchWidget;
+                return searchFunctionality(view,geojsonLayer,false);
             }
         });
 
