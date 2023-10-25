@@ -5,7 +5,6 @@ import Graphic from '@arcgis/core/Graphic';
 import findRoutes from './findStops';
 
 const routingService = (view,origin,destination) => {
-    
     // url to the mapping and routing service
     const routeUrl = "https://route-api.arcgis.com/arcgis/rest/services/World/Route/NAServer/Route_World";
 
