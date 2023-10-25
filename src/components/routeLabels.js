@@ -13,15 +13,19 @@ const routeLabels = (origin,destination) => {
         // style of label
         labelingInfo: [{
             labelExpressionInfo: {expression : document.getElementById("label-expression").text},
-            labelPlacement: "center-right",
+            labelPlacement: "above-center",
             symbol: {
                 type: "text",
+                color: [69, 69, 69],
+                backgroundColor: [255, 249, 237, 0.75],
+                borderLineColor: [255, 248, 200],
+                borderLineSize: 1,
+                yoffset: 10,
                 font: {
-                    size: 9,
-                    family: "Noto Sans"
+                    size: 11,
+                    family: "Roboto"
                 },
                 horizontalAlignment: "left",
-                color: "#2b2b2b"
             }
         }],
         // assign a transarent renderer so that only labels are visible
