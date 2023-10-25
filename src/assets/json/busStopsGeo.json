@@ -523,7 +523,7 @@
       "type": "Feature",
       "geometry": {
           "type": "Point",
-          "coordinates": [77.307017, 28.666583]
+          "coordinates": [77.3145,28.6683]
       },
       "properties": {
           "name": "Vivek Vihar",
