@@ -17,7 +17,7 @@ const routeLabels = (origin,destination) => {
             symbol: {
                 type: "text",
                 color: [69, 69, 69],
-                backgroundColor: [255, 249, 237, 0.75],
+                backgroundColor: [95, 240, 6, 0.75],
                 borderLineColor: [255, 248, 200],
                 borderLineSize: 1,
                 yoffset: 10,
