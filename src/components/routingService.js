@@ -68,11 +68,6 @@ const routingService = (view,origin,destination) => {
 
     // show the route statistics
     const showStatistics = (stats) => {
-        const script = document.createElement("script");
-        script.setAttribute("type","text/plain");
-        script.setAttribute("id","label-expression");
-        script.innerHTML = "return Concatenate([$feature.name,Round($feature.PMAvg)],TextFormatting.NewLine);";
-
         const statistics = document.createElement("div");
         statistics.classList = "esri-widget esri-widget--panel";
         statistics.style.width = "100%";
@@ -81,7 +76,8 @@ const routingService = (view,origin,destination) => {
         statistics.style.fontSize = "14px"
         statistics.style.boxShadow = "0 1px 4px rgba(0, 0, 0, .8)"
 
-        const heading = document.createElement("h3");
+        const heading = document.createElement("h2");
+        heading.style.marginBottom = "10px";
         heading.innerHTML = "Route Statistics";
         statistics.appendChild(heading);
 
