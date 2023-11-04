@@ -1,0 +1,82 @@
+.app__header {
+    background-color: var(--color-black);
+    display: flex;
+    flex-direction: row;
+}
+
+.app__header-h1 {
+    font: var(--font-base);
+    color: var(--color-golden);
+    letter-spacing: 0.04em;
+    line-height: 117px;
+    text-transform: capitalize;
+    font-size: 90px;
+    justify-self: center;
+    align-items: flex-start;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.app__header-p {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 32px;
+    font-size: 25px;
+    margin-bottom: 2rem;
+}
+
+
+.app__header-img img {
+    width: 80%;
+}
+
+@media screen and (max-width: 2000px) {
+    .app__header-h1 {
+        font-size: 120px;
+        line-height: 130px;
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .app__header {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .app__header-h1 {
+        font-size: 90px;
+    }
+
+    .app__header-p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .app__header-h1 {
+        font-size: 70px;
+        line-height: 87px;
+    }
+
+    .app__header-p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .app__header-h1 {
+        font-size: 50px;
+        line-height: 70px;
+    }
+
+    .app__header-p {
+        line-height: 28px;
+        font-size: 16px;
+    }
+}
