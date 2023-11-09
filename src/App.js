@@ -1,5 +1,5 @@
 import './App.css';
-import { Navbar, Hero } from './containers';
+import { Navbar, Hero, About } from './containers';
 import BusStopsDelhi from './containers/BusStopsDelhi';
 
 function App() {
@@ -8,6 +8,7 @@ function App() {
       <Navbar />
       <Hero />
       <BusStopsDelhi />
+      {/* <About /> */}
     </div>
   );
 }

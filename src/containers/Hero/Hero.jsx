@@ -2,7 +2,7 @@ import React from 'react';
 import Lottie from 'lottie-react';
 
 import './Hero.css';
-import SubHeading from '../../components/Subheading'; 
+import SubHeading from '../../components/common/Subheading'; 
 import heroAnimation from '../../assets/animations/heroAnimation.json';
 
 const Hero = () => (

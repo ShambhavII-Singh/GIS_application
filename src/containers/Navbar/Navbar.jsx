@@ -19,18 +19,18 @@ const Navbar = () => {
           </a>
         </li>
         <li className='p__opensans'>
-          <a href="#home">
+          <a href="#instructions">
             Instructions
           </a>
         </li>
         <li className='p__opensans'>
-          <a href="#contact">
+          <a href="#about">
             About
           </a>
         </li>
       </ul>
       <div className='app__navbar-login'>
-        <a href='#login' className='p__opensans'>Find your route?</a>
+        <a href='#map' className='p__opensans'>Find your route?</a>
       <div />
         <a href='/' className='p__opensans'>Statistics</a>
       </div>
@@ -42,23 +42,23 @@ const Navbar = () => {
               <XIcon  color='#DCCA87' fontSize={27} className='overlay__close' onClick={()=>{setToggleMenu(false);}} />
               <ul className='app__navbar-smallscreen-links'>
               <li className='p__opensans'>
-              <a href='#login'>Find your route?</a>
+              <a href='#map'>Find your route?</a>
             </li>
             <li className='p__opensans'>
             <a href='/'>Statistics</a>
             </li>
             <li className='p__opensans'>
-              <a href="#pages">
+              <a href="#home">
                 Home
               </a>
             </li>
             <li className='p__opensans'>
-              <a href="#contact-us">
+              <a href="#instructions">
                 Instuctions
               </a>
             </li>
             <li className='p__opensans'>
-              <a href="#blog">
+              <a href="#about">
                 About
               </a>
             </li>
