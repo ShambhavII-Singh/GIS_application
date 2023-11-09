@@ -1,3 +1,6 @@
+import { useEffect, useRef, useState } from 'react';
+import Select from 'react-select';
+
 import esriConfig from '@arcgis/core/config';
 import Map from '@arcgis/core/Map';
 import MapView from '@arcgis/core/views/MapView';
@@ -5,15 +8,10 @@ import Fullscreen from '@arcgis/core/widgets/Fullscreen';
 import PictureMarkerSymbol from '@arcgis/core/symbols/PictureMarkerSymbol';
 import GeoJSONLayer from '@arcgis/core/layers/GeoJSONLayer';
 
-import { useEffect, useRef, useState } from 'react';
-import Select from 'react-select';
-
-import routingService from '../components/routingService';
-import customPopup from '../components/customPopup';
 import stopsList from '../assets/json/busStopSelect.json';
-import routeLabels from '../components/routeLabels';
 import GeoJsonObject from '../assets/json/busStopsGeo.json';
-import searchFunctionality from '../components/searchFunctionality';
+
+import { routingService, customPopup, routeLabels, searchFunctionality, fetchData} from '../utils'
 
 
 const BusStopsDelhi = () => {
@@ -23,7 +21,7 @@ const BusStopsDelhi = () => {
 
     useEffect(() => {
         //API key
-        esriConfig.apiKey = "AAPK654ada81dfb94a41bebd71ff4d8f2819nvY5Wma3Hge2PT9Uy6XB14bgnNo_q1zEGBCWwTmloU6F1qtvgkiSTYiSHFlYGT5G";
+        esriConfig.apiKey = process.env.REACT_APP_ARCGIS_API_KEY;
 
         //contains data for the layer to render all bus stops
         const geojsonLayer = new GeoJSONLayer({
@@ -95,6 +93,7 @@ const BusStopsDelhi = () => {
         // enable search bar
         searchFunctionality(view,geojsonLayer,true);
 
+        fetchData();
 
         // shows the route when both origin and destination are defined
         if (selectedDestination && selectedOrigin) {
@@ -111,12 +110,12 @@ const BusStopsDelhi = () => {
     }, [selectedDestination, selectedOrigin]); // refreshes whenever origin and destination are defined
 
     return (
-        <div className='map__routing--container'>
+        <div className='map__routing--container' id='map'>
             {/* script tag used for multiline labels */}
             <script type="text/plain" id="label-expression">
                 return Concatenate([$feature.name,"PM2.5: "+Round($feature.PMAvg)],TextFormatting.NewLine);
             </script>
-            <div style={{width:"90%"}} className='map__container'>
+            <div style={{width:"100%"}} className='map__container'>
                 <div ref={appRef}>
                     <div style={{height:"90vh"}}></div>
                 </div>
