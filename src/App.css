@@ -7,7 +7,7 @@
 }
 
 .section__padding {
-  padding: 4rem 6rem;
+  padding: 1rem 2.5rem;
 }
 
 .flex__center {
@@ -39,7 +39,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   margin-left: 2rem;
 }
 
@@ -50,6 +49,8 @@
 
 .app__wrapper_img img {
   width: 80%;
+  align-items: center;
+  justify-content: center;
 }
 
 .custom__button {
