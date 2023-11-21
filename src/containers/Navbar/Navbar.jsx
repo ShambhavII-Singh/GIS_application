@@ -19,11 +19,6 @@ const Navbar = () => {
           </a>
         </li>
         <li className='p__opensans'>
-          <a href="#instructions">
-            Instructions
-          </a>
-        </li>
-        <li className='p__opensans'>
           <a href="#about">
             About
           </a>
@@ -41,27 +36,14 @@ const Navbar = () => {
             <div className='app__navbar-smallscreen_overlay flex__center slide-bottom'>
               <XIcon  color='#DCCA87' fontSize={27} className='overlay__close' onClick={()=>{setToggleMenu(false);}} />
               <ul className='app__navbar-smallscreen-links'>
-              <li className='p__opensans'>
-              <a href='#map'>Find your route?</a>
-            </li>
-            <li className='p__opensans'>
-            <a href='/'>Statistics</a>
-            </li>
-            <li className='p__opensans'>
-              <a href="#home">
-                Home
-              </a>
-            </li>
-            <li className='p__opensans'>
-              <a href="#instructions">
-                Instuctions
-              </a>
-            </li>
-            <li className='p__opensans'>
-              <a href="#about">
-                About
-              </a>
-            </li>
+                <li className='p__opensans'>
+                  <a href="#home">
+                    Home
+                  </a>
+                </li>
+                <li className='p__opensans'>
+                  <a href='#map'>Find your route?</a>
+                </li>
               </ul>
             </div>
           </>
