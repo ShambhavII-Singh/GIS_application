@@ -1,0 +1,17 @@
+.map__container {
+    background-color: var(--color-black);
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.instructions {
+    font-family: var(--font-alt);
+    color: var(--color-white);
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-transform: capitalize;
+    line-height: 32px;
+    font-size: 20px;
+    padding: 0.85rem
+}
