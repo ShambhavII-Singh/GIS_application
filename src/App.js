@@ -1,14 +1,14 @@
 import './App.css';
-import { Navbar, Hero, About } from './containers';
-import BusStopsDelhi from './containers/BusStopsDelhi';
+import { Navbar, Hero, MapContainer, About } from './containers';
+import BusStopsDelhi from './components/BusStopsDelhi';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Hero />
-      <BusStopsDelhi />
-      {/* <About /> */}
+      <MapContainer />
+      <About />
     </div>
   );
 }
