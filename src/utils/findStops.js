@@ -185,16 +185,16 @@ const routeStatistics = (stops) => {
     if (average>=0 && average<=100) {
         rating = 5;
     }
-    if (average>=101 && average<=200) {
+    else if (average>=101 && average<=200) {
         rating = 4;
     }
     else if (average>=201 && average<=300) {
         rating = 3;
     }
-    if (average>=301 && average<=400) {
+    else if (average>=301 && average<=400) {
         rating = 2;
     }
-    if (average>=401 && average<=500) {
+    else {
         rating = 1;
     }
     const places = {"origin": data[findIndex(stops[0])].name, "destination": data[findIndex(stops[stops.length-1])].name}

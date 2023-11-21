@@ -93,11 +93,11 @@ const BusStopsDelhi = () => {
         // enable search bar
         searchFunctionality(view,geojsonLayer,true);
 
+        // get latest pollution data
         fetchData();
 
         // shows the route when both origin and destination are defined
-        if (selectedDestination && selectedOrigin) {
-            
+        if (selectedDestination && selectedOrigin) {        
             // add labels
             map.layers.add(routeLabels(selectedOrigin["value"],selectedDestination["value"]));
             // show calculated route on map
@@ -113,14 +113,14 @@ const BusStopsDelhi = () => {
         <div className='map__routing--container' id='map'>
             {/* script tag used for multiline labels */}
             <script type="text/plain" id="label-expression">
-                return Concatenate([$feature.name,"PM2.5: "+Round($feature.PMAvg)],TextFormatting.NewLine);
+                return Concatenate([$feature.name,"PM2.5 : "+Round($feature.PMAvg)],TextFormatting.NewLine);
             </script>
             <div style={{width:"100%"}} className='map__container'>
-                <div ref={appRef}>
+                <div ref={appRef} style={{border: "solid 7px #DCCA87"}}>
                     <div style={{height:"90vh"}}></div>
                 </div>
             </div>
-            <div className='routing__container'>
+            <div className='routing__container' style={{width:"100%", padding: "0px 0.85rem"}}>
                 <Select options={stopsList} isSearchable={true} placeholder="Where are you right now? 🫡" value={selectedOrigin} onChange={setSelectedOrigin}/>
                 <Select options={stopsList} isSearchable={true} placeholder="Where do you wanna go? 🤔" value={selectedDestination} onChange={setSelectedDestination}/>
             </div>
