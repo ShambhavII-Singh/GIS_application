@@ -22,4 +22,17 @@ This project was made keeping in maind the terrible air quality in New Delhi and
 - Introduction of user statistics to denote distance covered and comparative safety ensured by travelling on the calculated routes and so on 
 - Introduction of a dark mode 
 
+## Tech Stack
+ArcGIS | ReactJS | REST APIs | HTML | CSS | JavaScript | API calls | Figma
+
+## Acknowlegments
+- ArcGIS
+- OpenWheatherMaps Pollution API
+- Lottie Animations
+- Calcite Icon Set
+- ReactSelect
+
+## Deployment
+https://ecotransit.vercel.app/
+
 
