@@ -137,3 +137,7 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-color: var(--color-black);
+}
